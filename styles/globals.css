@@ -17,7 +17,7 @@
 --body-font-size-mobile: 14px;
 
 /* sizes */
---max-width-screen: 1440px;
+--max-width-screen: 1200px;
 }
 
 @font-face {
@@ -33,7 +33,7 @@
 html,
 body {
 	scroll-behavior: smooth;
-	max-width: var(--max-width-screen);
+	/* max-width: var(--max-width-screen); */
 	margin: 0 auto;
 	font-family: var(--primary-font);
 	font-size: var(--body-font-size-desktop);
@@ -46,6 +46,7 @@ a {
 }
 button {
 	font-family: var(--primary-font);
+	font-size: var(--body-font-size-desktop);
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
