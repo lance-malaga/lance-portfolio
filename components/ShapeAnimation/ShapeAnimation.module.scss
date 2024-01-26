@@ -1,0 +1,45 @@
+.first__row,
+.second__row,
+.third__row {
+    display: flex;
+    height: 150px;
+}
+
+// ANIMATION
+.shape {
+	position: relative;
+}
+.frontFace {
+    cursor: pointer;
+    position: relative;
+	backface-visibility: hidden;
+	transition: all 0.5s ease-in;
+	transform: perspective(500px) rotateY(0deg);
+    height: inherit;
+}
+.backFace {
+    width: 100%;
+    position: absolute;
+	left: 0;
+	top: 0;
+	backface-visibility: hidden;
+	transition: all 0.5s ease-in;
+	transform: perspective(500px) rotateY(180deg);
+}
+.shape:hover .frontFace {
+    transform: perspective(500px) rotateY(-180deg);
+}
+.shape:hover .backFace {
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.hover__container {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 65px;
+    margin-top: 5px;
+    gap: 15px;
+    p {
+        margin-bottom: -4px;
+    }
+}
