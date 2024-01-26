@@ -33,7 +33,6 @@
 html,
 body {
 	scroll-behavior: smooth;
-	/* max-width: var(--max-width-screen); */
 	margin: 0 auto;
 	font-family: var(--primary-font);
 	font-size: var(--body-font-size-desktop);
