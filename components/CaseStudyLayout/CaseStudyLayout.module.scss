@@ -1,0 +1,64 @@
+
+.problem__container,
+.user_persona__container,
+.solution__container,
+.architecture__container,
+.branding__container,
+.features__container {
+    margin-top: 90px;
+
+    h4 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+.solution__container {
+    display: flex;
+    justify-content: space-between;
+    div {
+        max-width: 50%;
+    }
+}
+
+.architecture__container {
+    img {
+        margin-top: 25px;
+    }
+}
+
+.features__container {
+    h4 {
+        margin-bottom: 0;
+    }
+    .features__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .features__items {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .item__details {
+        display: flex;
+        align-items: center;
+        padding: 23px;
+        gap: 20px;
+        cursor: pointer;
+        transition: 0.5s all ease-in-out;
+        h2 {
+            font-size: 64px;
+            font-family: var(--secondary-font);
+            min-width: 65px;
+            text-align: center;
+        }
+        p:first-of-type {
+            font-weight: bold;
+        }
+    }
+    .item__details:hover {
+        background-color: var(--color-white-bg);
+    }
+}
