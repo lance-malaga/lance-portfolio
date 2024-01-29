@@ -1,0 +1,15 @@
+.work_details__container {
+	padding: 60px 220px;
+	height: auto;
+
+	.background_img {
+		z-index: -1;
+		position: absolute;
+		min-height: 100vh;
+		width: 100%;
+		object-fit: cover;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+}
