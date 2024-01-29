@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '@/styles/Home.module.scss'
 
 // components
@@ -27,7 +28,7 @@ export default function Home() {
 					<h1>Lance Malaga</h1>
 					<h4>front-end web & app developer, ux/ui & graphic designer.</h4>
 					<div className={styles.buttons__container}>
-						<button>
+						<Link href={`/work/development`}>
 							<Image
 								src={forwardIcon}
 								alt={'forward-icon'}
@@ -35,8 +36,8 @@ export default function Home() {
 								height={12}
 							/>
 							<p>see projects</p>
-						</button>
-						<button>
+						</Link>
+						<Link href={''}>
 							<Image
 								src={forwardIcon}
 								alt={'forward-icon'}
@@ -44,9 +45,8 @@ export default function Home() {
 								height={12}
 							/>
 							<p>more about me</p>
-						</button>
+						</Link>
 					</div>
-
 				</div>
 				<div className={styles.right__container}>
 					<ShapeAnimation/>

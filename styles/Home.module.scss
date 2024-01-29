@@ -39,7 +39,7 @@
 		display: flex;
 		align-items: center;
 		gap: 100px;
-		button {
+		a {
 			display: flex;
 			align-items: center;
 			gap: 15px;
@@ -47,7 +47,7 @@
 			border-bottom: 2px solid transparent;
 			transition: 0.5s all ease-in;
 		}
-		button:hover {
+		a:hover {
 			border-bottom: 2px solid var(--color-black);
 		}
 	}
