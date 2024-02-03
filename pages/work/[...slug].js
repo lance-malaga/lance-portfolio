@@ -15,6 +15,8 @@ import { work_graphic } from "@/data/work_graphic";
 
 // assets
 import backgroundWork from '@/public/images/background/background-work.png'
+import backgroundCase from '@/public/images/background/background-case.png'
+import ProjectPortraitLayout from '@/components/ProjectPortraitLayout';
 
 export async function getServerSideProps(context) {
 	const { params } = context;
@@ -44,8 +46,6 @@ export default function WorkDetails({category, projectName, project}) {
             return match.charAt(0).toUpperCase() + match.slice(1);
         })
     }
-    console.log(project);
-
     // const [exapndImage, setExpandImage] = useState(false);
     // const handleExpandImage = () => {
     //     setExpandImage(!exapndImage);
@@ -54,18 +54,24 @@ export default function WorkDetails({category, projectName, project}) {
     return (
         <div className={styles.work_details__container}>
             <Image
-				src={backgroundWork}
+				src={projectName == 'spurt' ? backgroundCase : backgroundWork}
 				alt='background-img-work'
 				width={"auto"}
 				height={"auto"}
 				className={styles.background_img}
 			/>
             <CustomHead title={`Works | ${formatProjectName(project.title)}`}/>
-            <Banner category={category} project={project} />
-            {projectName == 'spurt' ? (
-                <CaseStudyLayout />
+            {project.portrait_layout ? (
+                <ProjectPortraitLayout category={category} project={project} />
             ) : (
-                <ProjectLayout project={project} />
+                <>
+                    <Banner category={category} project={project} />
+                    {projectName == 'spurt' ? (
+                        <CaseStudyLayout />
+                    ) : (
+                        <ProjectLayout project={project} />
+                    )}
+                </>
             )}
         </div>
     )

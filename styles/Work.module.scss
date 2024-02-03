@@ -1,11 +1,13 @@
 .work__container {
 	padding: 60px 120px;
 	height: auto;
+	position: relative;
 
 	.background_img {
 		z-index: -1;
 		position: absolute;
-		min-height: 100vh;
+		// min-height: 100vh;
+		height: -webkit-fill-available;
 		width: 100%;
 		object-fit: cover;
 		top: 0;
