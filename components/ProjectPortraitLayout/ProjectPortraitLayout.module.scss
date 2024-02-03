@@ -1,0 +1,35 @@
+.project__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    div {
+        max-width: 860px;
+    }
+    h2 {
+        font-size: 64px;
+        font-family: var(--secondary-font);
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 20px;
+    }
+    a {
+        padding: 35px;
+        transition: 0.5s all ease-in-out;
+    }
+    a:hover {
+        background-color: var(--color-orange);
+    }
+}
+
+.portait__layout {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+    
+    .description {
+        margin: 30px 0;
+    }
+}
+
