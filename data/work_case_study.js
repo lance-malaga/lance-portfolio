@@ -1,5 +1,5 @@
-import bannerImg from '@/public/images/work/development/work01-spurt/spurt-header.svg'
-import userPersona from '@/public/images/work/development/work01-spurt/user-persona.svg'
+import bannerImg from '@/public/images/work/development/work01-spurt/spurt-header.png'
+import userPersona from '@/public/images/work/development/work01-spurt/user-persona.png'
 import solutionImg from '@/public/images/work/development/work01-spurt/solution.svg'
 import wireframeImg from '@/public/images/work/development/work01-spurt/wireframe.svg'
 import brandingImg from '@/public/images/work/development/work01-spurt/branding.svg'
@@ -10,7 +10,7 @@ import feature03 from '@/public/images/work/development/work01-spurt/feature-com
 export const work_case_study = {
     title: 'Spurt',
     subtitle: 'MOBILE DEVELOPMENT PROJECT | CASE STUDY',
-    banner: bannerImg,
+    banner: feature01,
     desc: 'Spurt represents a mobile application tailored for first time gardeners and community garden administrators alike. Through the use of artificial intelligence (AI) and other integrated features, the app is designed to maximize the potential of diverse factors, including weather conditions, soil composition, temperature fluctuations, and plant-specific data. By utilizing these insights at every stage, Spurt provides comprehensive assistance and support, fostering natural growth and empowering users to address food insecurities with confidence.',
     problem: {
         title: 'PROBLEM IDENTIFICATION',
