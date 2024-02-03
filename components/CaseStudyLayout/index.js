@@ -18,7 +18,7 @@ export default function CaseStudyLayout() {
                     src={data.user_persona.image}
                     alt={'user-persona'}
                     width={"auto"}
-                    height={"auto"}
+                    height={510}
                 />
             </div>
             <div className={styles.solution__container}>
@@ -28,7 +28,7 @@ export default function CaseStudyLayout() {
                 </div>
                 <Image
                     src={data.solution.image}
-                    alt={'user-persona'}
+                    alt={'mock-up-img'}
                     width={"auto"}
                     height={"auto"}
                 />
