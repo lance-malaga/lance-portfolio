@@ -37,7 +37,7 @@ export default function Home() {
 							/>
 							<p>see projects</p>
 						</Link>
-						<Link href={''}>
+						<Link href={'/about'}>
 							<Image
 								src={forwardIcon}
 								alt={'forward-icon'}

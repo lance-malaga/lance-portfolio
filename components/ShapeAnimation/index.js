@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './ShapeAnimation.module.scss'
 import { shapes } from '@/data/shapes'
 import squigglyLine from '@/public/icons/squiggly-line.svg'
@@ -20,12 +21,14 @@ export default function ShapeAnimation() {
                             </div>
                             { data.sample && (
                                 <div className={styles.backFace}>
-                                    <Image
-                                        src={data.sample}
-                                        alt={"sample" + data.id}
-                                        width={"auto"}
-                                        height={"auto"}
-                                    />
+                                    <Link href={data.link}>
+                                        <Image
+                                            src={data.sample}
+                                            alt={"sample" + data.id}
+                                            width={"auto"}
+                                            height={"auto"}
+                                        />
+                                    </Link>
                                 </div>
                             )}
                         </div>
@@ -44,12 +47,14 @@ export default function ShapeAnimation() {
                             </div>
                             { data.sample && (
                                 <div className={styles.backFace}>
-                                    <Image
-                                        src={data.sample}
-                                        alt={"sample" + data.id}
-                                        width={"auto"}
-                                        height={"auto"}
-                                    />
+                                    <Link href={data.link}>
+                                        <Image
+                                            src={data.sample}
+                                            alt={"sample" + data.id}
+                                            width={"auto"}
+                                            height={"auto"}
+                                        />
+                                    </Link>
                                 </div>
                             )}
                         </div>
@@ -68,12 +73,14 @@ export default function ShapeAnimation() {
                             </div>
                             { data.sample && (
                                 <div className={styles.backFace}>
-                                    <Image
-                                        src={data.sample}
-                                        alt={"sample" + data.id}
-                                        width={"auto"}
-                                        height={"auto"}
-                                    />
+                                    <Link href={data.link} target='_blank'>
+                                        <Image
+                                            src={data.sample}
+                                            alt={"sample" + data.id}
+                                            width={"auto"}
+                                            height={"auto"}
+                                        />
+                                    </Link>
                                 </div>
                             )}
                         </div>

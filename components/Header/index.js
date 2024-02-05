@@ -16,12 +16,14 @@ export default function Header() {
                     height={32}
                 />
             </Link>
-            <Image
-                src={menuIcon}
-                alt="menu-icon"
-                width={30}
-                height={20}
-            />
+            <Link href={'/navigation'}>
+                <Image
+                    src={menuIcon}
+                    alt="menu-icon"
+                    width={30}
+                    height={20}
+                />
+            </Link>
         </header>
     )
 }

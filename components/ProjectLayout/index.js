@@ -21,7 +21,6 @@ export default function ProjectLayout({project}) {
                         alt={'link-out-icon'}
                         width={25}
                         height={25}
-                        className={styles.gallery_img}
                     />
                     <p>TRY IT OUT</p>
                 </Link>
@@ -39,7 +38,6 @@ export default function ProjectLayout({project}) {
                             alt={'gallery-img ' + index}
                             width={185}
                             height={185}
-                            className={styles.gallery_img}
                         />
                     </button>
                 ))}

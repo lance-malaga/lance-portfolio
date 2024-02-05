@@ -21,7 +21,8 @@ export const shapes = [
     {
         id: 2,
         shape: shape02,
-        sample: sample01
+        sample: sample01,
+        link: '/work/graphic-design/juans-palawan-adventure',
     },
     {
         id: 3,
@@ -34,7 +35,8 @@ export const shapes = [
     {
         id: 5,
         shape: shape05,
-        sample: sample02
+        sample: sample02,
+        link: '/work/development/spurt',
     },
     {
         id: 6,
@@ -44,6 +46,7 @@ export const shapes = [
         id: 7,
         shape: shape07,
         sample: sample03,
+        link: '/work/graphic-design/spaces',
     },
     {
         id: 8,
@@ -52,7 +55,8 @@ export const shapes = [
     {
         id: 19,
         shape: shape09,
-        sample: sample04
+        sample: sample04,
+        link: '/work/graphic-design/harry-styles',
     },
     {
         id: 10,
