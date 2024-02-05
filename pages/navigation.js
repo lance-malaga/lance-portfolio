@@ -48,7 +48,7 @@ export default function Navigation() {
                         ))}
                     </div>
                     <div className={styles.link__container}>
-                        <Link href='https://www.linkedin.com/in/lance-matsuo-malaga/'>
+                        <Link href='https://www.linkedin.com/in/lance-matsuo-malaga/' target='_blank'>
                             <Image
                                 src={linkIcon}
                                 alt='link-icon'
@@ -57,7 +57,7 @@ export default function Navigation() {
                             />
                             <span>linkedin</span>
                         </Link>
-                        <Link href='https://www.instagram.com/lancemalaga/'>
+                        <Link href='https://www.instagram.com/lancemalaga/' target='_blank'>
                             <Image
                                 src={linkIcon}
                                 alt='link-icon'
