@@ -69,14 +69,14 @@
 }
 
 @media (min-width: 1440px) {
-    .home__container {
+    .home__main_content {
 		margin: 0 auto;
 		max-width: var(--max-width-screen);
 	}
 }
 @media (min-width: 1600px) {
     .home__container {
-		margin: 60px auto;
+		padding: 120px 120px;
 	}
 }
 @media (max-width: 1260px) {

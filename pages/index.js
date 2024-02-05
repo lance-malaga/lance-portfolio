@@ -22,36 +22,38 @@ export default function Home() {
 				className={styles.background_img}
 			/>
 			<CustomHead/>
-			<Header/>
-			<main className={styles.main__container}> 
-				<div className={styles.left__container}>
-					<h1>Lance Malaga</h1>
-					<h4>front-end web & app developer, ux/ui & graphic designer.</h4>
-					<div className={styles.buttons__container}>
-						<Link href={`/work/development`}>
-							<Image
-								src={forwardIcon}
-								alt={'forward-icon'}
-								width={18}
-								height={12}
-							/>
-							<p>see projects</p>
-						</Link>
-						<Link href={'/about'}>
-							<Image
-								src={forwardIcon}
-								alt={'forward-icon'}
-								width={18}
-								height={12}
-							/>
-							<p>more about me</p>
-						</Link>
+			<div className={styles.home__main_content}>
+				<Header/>
+				<main className={styles.main__container}> 
+					<div className={styles.left__container}>
+						<h1>Lance Malaga</h1>
+						<h4>front-end web & app developer, ux/ui & graphic designer.</h4>
+						<div className={styles.buttons__container}>
+							<Link href={`/work/development`}>
+								<Image
+									src={forwardIcon}
+									alt={'forward-icon'}
+									width={18}
+									height={12}
+								/>
+								<p>see projects</p>
+							</Link>
+							<Link href={'/about'}>
+								<Image
+									src={forwardIcon}
+									alt={'forward-icon'}
+									width={18}
+									height={12}
+								/>
+								<p>more about me</p>
+							</Link>
+						</div>
 					</div>
-				</div>
-				<div className={styles.right__container}>
-					<ShapeAnimation/>
-				</div>
-			</main>
+					<div className={styles.right__container}>
+						<ShapeAnimation/>
+					</div>
+				</main>
+			</div>
 		</div>
 	)
 }

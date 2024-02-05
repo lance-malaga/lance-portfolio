@@ -43,14 +43,16 @@ export default function Work({slug, filteredData}) {
 				className={styles.background_img}
 			/>
             <CustomHead title={'Works'} />
-            <Header/>
-            <div className={styles.filter__section}>
-                <h2>WORK</h2>
-                <WorkFilter slug={slug}/>
+            <div className={styles.work__main_content}>
+                <Header/>
+                <div className={styles.filter__section}>
+                    <h2>WORK</h2>
+                    <WorkFilter slug={slug}/>
+                </div>
+                <main className={styles.main__container}>
+                    <GridLayout slug={slug} filteredData={filteredData}/>
+                </main>
             </div>
-            <main className={styles.main__container}>
-                <GridLayout slug={slug} filteredData={filteredData}/>
-            </main>
         </div>
     )
 }
