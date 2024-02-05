@@ -1,11 +1,13 @@
 .home__container {
 	padding: 60px 120px;
 	height: auto;
+	position: relative;
 
 	.background_img {
 		z-index: -1;
 		position: absolute;
 		min-height: 100vh;
+		height: -webkit-fill-available;
 		width: 100%;
 		object-fit: cover;
 		top: 0;
@@ -44,12 +46,29 @@
 			align-items: center;
 			gap: 15px;
 			padding-bottom: 10px;
-			border-bottom: 2px solid transparent;
-			transition: 0.5s all ease-in;
+			position: relative;
 		}
-		a:hover {
-			border-bottom: 2px solid var(--color-black);
-		}
+		a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            border-radius: 5px;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: currentcolor;
+            transform-origin: bottom right;
+            transition: transform 0.5s ease-out;
+        }
+        a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+		
+		// a:hover {
+		// 	border-bottom: 2px solid var(--color-black);
+		// }
 	}
 }
 

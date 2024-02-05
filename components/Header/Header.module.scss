@@ -3,4 +3,11 @@
     justify-content: space-between;
     padding-bottom: 20px;
     border-bottom: 2px solid var(--color-black);
+
+    a:last-of-type {
+        transition: all 0.5s ease-in-out;
+    }
+    a:last-of-type:hover {
+        opacity: 0.3;
+    }
 }
