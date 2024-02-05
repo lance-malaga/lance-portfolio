@@ -1,0 +1,54 @@
+.contact__container {
+	padding: 60px 120px;
+	height: auto;
+	position: relative;
+
+	.background_img {
+		z-index: -1;
+		position: absolute;
+		min-height: 100vh;
+		height: -webkit-fill-available;
+		width: 100%;
+		object-fit: cover;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+    main {
+        margin: 80px 150px 50px;
+        .content__container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        h1 {
+            font-family: var(--secondary-font);
+            text-transform: uppercase;
+            font-size: 64px;
+        }
+        h4 {
+            text-transform: uppercase;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .mail__container {
+            font-size: 16px;
+        }
+        .link__container {
+            display: flex;
+            gap: 50px;
+            button {
+                display: flex;
+                gap: 15px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid transparent;
+                transition: 0.5s all ease-in-out;
+                font-size: 16px;
+            }
+            button:hover {
+                border-bottom: 2px solid var(--color-black);
+            }
+        }
+    }
+}
