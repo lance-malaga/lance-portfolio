@@ -1,0 +1,104 @@
+.navigation__container {
+	padding: 60px 120px;
+	height: auto;
+	position: relative;
+
+	.background_img {
+		z-index: -1;
+		position: absolute;
+		min-height: 100vh;
+		height: -webkit-fill-available;
+		width: 100%;
+		object-fit: cover;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+    main {
+        margin: 80px 0 50px;
+        display: flex;
+        align-items: center;
+        .content__container {
+            margin-left: -75px;
+        }
+        .nav_list__container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        h1 {
+            font-family: var(--secondary-font);
+            text-transform: uppercase;
+            font-size: 64px;
+            transition: 0.5s all ease-in-out;
+            span {
+                font-size: 24px;
+                font-family: var(--primary-font);
+                font-weight: 400;
+                margin-right: 10px;
+            }
+        }
+        h1:hover {
+            margin-left: 40px;
+        }
+        .link__container {
+            margin-top: 40px;
+            display: flex;
+            gap: 50px;
+        
+            a {
+                display: flex;
+                align-items: center;
+                padding-bottom: 10px;
+                position: relative;
+                gap: 15px;
+                font-size: 16px;
+            }
+            a::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                border-radius: 5px;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background: currentcolor;
+                transform-origin: bottom right;
+                transition: transform 0.5s ease-out;
+            }
+            a:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .navigation__container {
+		margin: 0 auto;
+		max-width: var(--max-width-screen);
+	}
+}
+@media (min-width: 1600px) {
+    .navigation__container {
+		margin: 60px auto;
+	}
+}
+@media (max-width: 1260px) {
+    
+}
+@media (max-width: 700px) {
+	.navigation__container {
+		padding: 50px;
+	}
+	
+}
+@media (max-width: 500px) {
+	.navigation__container {
+		padding: 40px 20px;
+	}
+	
+}
