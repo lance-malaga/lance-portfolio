@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '@/styles/About.module.scss'
 
 // components
@@ -35,15 +36,17 @@ export default function About() {
                     <p>
                         Hello, I'm Lance—a versatile professional with a proven track record in crafting impactful websites, mobile applications, and designs. My journey through Graphic Design, UI/UX Design, Frontend Development and Architecture has equipped me with a diverse skill set. I'm always eager to learn new things, and this passion for continuous growth fuels my ability to approach challenges from unique perspectives, fostering creativity and innovation in both development and design. I thrive on delivering solutions that not only meet but exceed the expectations of my clients.
                     </p>
-                    <button>
-                        <Image
-                            src={download_icon}
-                            alt='download-icon'
-                            width={18}
-                            height={18}
-                        />
-                        <span>resume</span>
-                    </button>
+                    <Link href={'/resume.pdf'} target='_blank' download='resume'>
+                        <button>
+                            <Image
+                                src={download_icon}
+                                alt='download-icon'
+                                width={18}
+                                height={18}
+                            />
+                            <span>resume</span>
+                        </button>
+                    </Link>
                 </div>
             </main>
         </div>
