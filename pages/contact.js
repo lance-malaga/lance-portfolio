@@ -8,6 +8,7 @@ import Header from '@/components/Header'
 // assets
 import backgroundContact from '@/public/images/background/background-contact.png'
 import linkIcon from '@/public/icons/link-out-icon.svg'
+import Link from 'next/link'
 
 export default function Contact() {
     return (
@@ -27,7 +28,7 @@ export default function Contact() {
                     <div className={styles.content__container}>
                         <div className={styles.mail__container}>
                             <h4>Mail</h4>
-                            <p>lance.matsuo@gmail.com</p>
+                            <a href='mailto: lance.matsuo@gmail.com' >lance.matsuo@gmail.com</a>
                         </div>
                         <div className={styles.social__container}>
                             <h4>Social Media</h4>
@@ -39,7 +40,9 @@ export default function Contact() {
                                         width={"auto"}
                                         height={"auto"}
                                     />
-                                    <span>linkedin</span>
+                                    <Link href={'https://www.linkedin.com/in/lance-malaga/'} target='_blank'>
+                                        <span>linkedin</span>
+                                    </Link>
                                 </button>
                                 <button>
                                     <Image
@@ -48,7 +51,9 @@ export default function Contact() {
                                         width={"auto"}
                                         height={"auto"}
                                     />
-                                    <span>instagram</span>
+                                    <Link href={'https://www.instagram.com/lancemalaga/'} target='_blank'>
+                                        <span>instagram</span>
+                                    </Link>
                                 </button>
                             </div>
                         </div>
