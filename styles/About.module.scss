@@ -20,6 +20,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+		gap: 50px;
         
         div {
             max-width: 620px;
@@ -47,73 +48,56 @@
 }
 
 @media (min-width: 1440px) {
-    .about__container {
+    .about__main_content {
 		margin: 0 auto;
 		max-width: var(--max-width-screen);
+	}
+	.about__container {
+		main {
+			justify-content: center;
+			gap: 100px;
+		}
 	}
 }
 @media (min-width: 1600px) {
     .about__container {
-		margin: 60px auto;
+		padding: 120px 120px;
 	}
 }
-@media (max-width: 1260px) {
-    .main__container {
-		flex-direction: column;
-		gap: 80px;
-	}
-	.left__container {
-		max-width: none;
-		h1 {
-			font-size: 60px;
-			text-align: center;
-		}
-		h4 {
-			font-size: 20px;
-			text-align: center;
-		}
-		.buttons__container {
-			justify-content: center;
+@media (max-width: 1070px) {
+    .about__container {
+		main {
+			flex-direction: column;
 		}
 	}
 }
 @media (max-width: 700px) {
 	.about__container {
 		padding: 50px;
-	}
-	.left__container {
-		h1 {
-			font-size: 50px;
+		main {
+			div{
+				h1 {
+					font-size: 50px;
+				}
+			}
+			img {
+				height: auto;
+				width: 100%;
+				object-fit: cover;
+			}
 		}
-		h4 {
-			font-size: 16px;
-		}
-		.buttons__container {
-			gap: 40px;
-		}
-	}
-	.right__container {
-		display: none;
 	}
 }
 @media (max-width: 500px) {
 	.about__container {
 		padding: 40px 20px;
-	}
-	.main__container {
-		margin-top: 50px;
-	}
-	.left__container {
-		h1 {
-			font-size: 30px;
-		}
-		h4 {
-			font-size: 16px;
-		}
-		.buttons__container {
-			justify-content: flex-start;
-			flex-direction: column;
-			gap: 0;
+		main {
+			margin-top: 50px;
+			div{
+				h1 {
+					font-size: 30px;
+				}
+			}
 		}
 	}
 }

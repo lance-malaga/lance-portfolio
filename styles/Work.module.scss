@@ -35,16 +35,24 @@
 		padding: 120px 120px;
 	}
 }
-@media (max-width: 1260px) {
-
-}
 @media (max-width: 700px) {
 	.work__container {
 		padding: 50px;
+	}
+	.filter__section {
+		h2 {
+			font-size: 50px;
+		}
 	}
 }
 @media (max-width: 500px) {
 	.work__container {
 		padding: 40px 20px;
+	}
+	.filter__section {
+		margin-top: 50px;
+		h2 {
+			font-size: 30px;
+		}
 	}
 }

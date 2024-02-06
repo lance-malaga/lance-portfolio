@@ -62,16 +62,18 @@ export default function WorkDetails({category, projectName, project}) {
 			/>
             <CustomHead title={`Works | ${formatProjectName(project.title)}`}/>
             {project.portrait_layout ? (
-                <ProjectPortraitLayout category={category} project={project} />
+                <div className={styles.work_details__main_container}>
+                    <ProjectPortraitLayout category={category} project={project} />
+                </div>
             ) : (
-                <>
+                <div className={styles.work_details__main_container}>
                     <Banner category={category} project={project} />
                     {projectName == 'spurt' ? (
                         <CaseStudyLayout />
                     ) : (
                         <ProjectLayout project={project} />
                     )}
-                </>
+                </div>
             )}
         </div>
     )

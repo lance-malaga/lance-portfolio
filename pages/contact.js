@@ -20,40 +20,42 @@ export default function Contact() {
 				className={styles.background_img}
 			/>
 			<CustomHead title={'Contact'}/>
-			<Header/>
-            <main>
-                <h1>Contact</h1>
-                <div className={styles.content__container}>
-                    <div className={styles.mail__container}>
-                        <h4>Mail</h4>
-                        <p>lance.matsuo@gmail.com</p>
-                    </div>
-                    <div className={styles.social__container}>
-                        <h4>Social Media</h4>
-                        <div className={styles.link__container}>
-                            <button>
-                                <Image
-                                    src={linkIcon}
-                                    alt='link-icon'
-                                    width={"auto"}
-                                    height={"auto"}
-                                />
-                                <span>linkedin</span>
-                            </button>
-                            <button>
-                                <Image
-                                    src={linkIcon}
-                                    alt='link-icon'
-                                    width={"auto"}
-                                    height={"auto"}
-                                />
-                                <span>instagram</span>
-                            </button>
+            <div className={styles.contact__main_content}>
+                <Header/>
+                <main>
+                    <h1>Contact</h1>
+                    <div className={styles.content__container}>
+                        <div className={styles.mail__container}>
+                            <h4>Mail</h4>
+                            <p>lance.matsuo@gmail.com</p>
                         </div>
-                    </div>
+                        <div className={styles.social__container}>
+                            <h4>Social Media</h4>
+                            <div className={styles.link__container}>
+                                <button>
+                                    <Image
+                                        src={linkIcon}
+                                        alt='link-icon'
+                                        width={"auto"}
+                                        height={"auto"}
+                                    />
+                                    <span>linkedin</span>
+                                </button>
+                                <button>
+                                    <Image
+                                        src={linkIcon}
+                                        alt='link-icon'
+                                        width={"auto"}
+                                        height={"auto"}
+                                    />
+                                    <span>instagram</span>
+                                </button>
+                            </div>
+                        </div>
 
-                </div>
-            </main>
+                    </div>
+                </main>
+            </div>
         </div>
     )
 }

@@ -6,7 +6,7 @@
 	.background_img {
 		z-index: -1;
 		position: absolute;
-		// min-height: 100vh;
+		min-height: 100vh;
 		height: -webkit-fill-available;
 		width: 100%;
 		object-fit: cover;
@@ -17,19 +17,20 @@
 }
 
 @media (min-width: 1440px) {
-    .work_details__container {
+    .work_details__main_container {
 		margin: 0 auto;
 		max-width: var(--max-width-screen);
 	}
 }
 @media (min-width: 1600px) {
     .work_details__container {
-		// margin: 60px auto;
-		padding: 120px 120px;
+		padding: 120px 0;
 	}
 }
-@media (max-width: 1260px) {
-
+@media (max-width: 1024px) {
+	.work_details__container {
+		padding: 60px 100px;
+	}
 }
 @media (max-width: 700px) {
 	.work_details__container {
