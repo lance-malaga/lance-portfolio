@@ -9,7 +9,7 @@ export const work_development = [
     {
         title: `YORI`,
         slug: 'yori',
-        subtitle: 'MOBILE DEVELOPMENT',
+        subtitle: 'MOBILE DEVELOPMENT PROJECT',
         grid_img: '/images/work/development/grid/work02-yori.svg',
         banner: '/images/work/development/work02-yori.png',
         programs: 'NEXTJS, ADOBE ILLUSTRATOR, AFTER EFFECTS, FIGMA',
@@ -49,7 +49,7 @@ export const work_development = [
     {
         title: `ROAST MASTERS`,
         slug: 'roast-masters',
-        subtitle: 'WEB DEVELOPMENT',
+        subtitle: 'WEB DEVELOPMENT PROJECT',
         grid_img: '/images/work/development/grid/work05-roast.svg',
         banner: '/images/work/development/work05-roast.png',
         programs: 'HTML5, CSS, ADOBE PHOTOSHOP, FIGMA',

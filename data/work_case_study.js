@@ -1,8 +1,11 @@
 import bannerImg from '@/public/images/work/development/work01-spurt/spurt-header.png'
-import userPersona from '@/public/images/work/development/work01-spurt/user-persona.png'
+import userPersona from '@/public/images/work/development/work01-spurt/katie-photo.png'
 import solutionImg from '@/public/images/work/development/work01-spurt/solution.svg'
 import wireframeImg from '@/public/images/work/development/work01-spurt/wireframe.svg'
-import brandingImg from '@/public/images/work/development/work01-spurt/branding.svg'
+// branding
+import logo from '@/public/images/work/development/work01-spurt/spurt-logo.svg'
+import font from '@/public/images/work/development/work01-spurt/poppins.svg'
+// features
 import feature01 from '@/public/images/work/development/work01-spurt/feature-your-garden.svg'
 import feature02 from '@/public/images/work/development/work01-spurt/feature-plantaid.svg'
 import feature03 from '@/public/images/work/development/work01-spurt/feature-community.svg'
@@ -10,7 +13,7 @@ import feature03 from '@/public/images/work/development/work01-spurt/feature-com
 export const work_case_study = {
     title: 'Spurt',
     subtitle: 'MOBILE DEVELOPMENT PROJECT | CASE STUDY',
-    banner: feature01,
+    banner: bannerImg,
     desc: 'Spurt represents a mobile application tailored for first time gardeners and community garden administrators alike. Through the use of artificial intelligence (AI) and other integrated features, the app is designed to maximize the potential of diverse factors, including weather conditions, soil composition, temperature fluctuations, and plant-specific data. By utilizing these insights at every stage, Spurt provides comprehensive assistance and support, fostering natural growth and empowering users to address food insecurities with confidence.',
     problem: {
         title: 'PROBLEM IDENTIFICATION',
@@ -18,7 +21,48 @@ export const work_case_study = {
     },
     user_persona: {
         title: 'USER PERSONA',
-        image: userPersona
+        image: userPersona,
+        info: [
+            {
+                title: 'Name',
+                desc: 'KATIE HAMILTON'
+            },
+            {
+                title: 'Age',
+                desc: '23'
+            },
+            {
+                title: 'Occupation',
+                desc: 'BARISTA'
+            },
+            {
+                title: 'Location',
+                desc: 'BURNABY, BC'
+            },
+            {
+                title: 'Annual Income',
+                desc: '25K'
+            }, 
+        ],
+        background: `Katie, a lively 23-year-old UBC student in Burnaby, cherishes life's simple pleasures. She finds joy in nature and embraces gardening to grow fresh produce. She aims to save time and money on groceries while living independently.`,
+        motivations: [
+            `Embracing a sustainable lifestyle by growing her own food and reducing her ecological footprint.`,
+            `Katie dreams of a thriving garden to save time on grocery trips and fulfill her needs.`,
+            `Seeks simple pleasures in connecting with nature and finding joy in gardening.`,
+            `Katie aspires to save time on future grocery trips through a self-sufficient garden.`,
+        ],
+        goals: [
+            `Enjoy gardening and connect with nature.`,
+            `Plans to join a local gardening community for tips and advice.`,
+            `Aims to learn basic care requirements for plants.`,
+            `Aspires to successfully grow fruits and vegetables, to lessen future grocery trips.`,
+        ],
+        frustrations: [
+            `Struggles with unexpected pests and lacks knowledge on effective control methods.`,
+            `Faces difficulty with gardening due to Vancouver’s frequent rainy weather.`,
+            `Challenges of independent living in a small space hinder growing diverse plants.`,
+            `Forgets to track gardening routines.`,
+        ],
     },
     solution: {
         title: 'SOLUTION',
@@ -32,7 +76,17 @@ export const work_case_study = {
     },
     branding: {
         title: 'BRANDING',
-        image: brandingImg,
+        logo_img: logo,
+        font_img: font,
+        colors: [
+            '#14171F', 
+            '#4267FA', 
+            '#F25292', 
+            '#5AA000', 
+            '#169F91', 
+            '#FF4934', 
+            '#FFB800', 
+        ],
     },
     features: [
         {
