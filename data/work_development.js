@@ -53,7 +53,7 @@ export const work_development = [
         grid_img: '/images/work/development/grid/work05-roast.svg',
         banner: '/images/work/development/work05-roast.png',
         programs: 'HTML5, CSS, ADOBE PHOTOSHOP, FIGMA',
-        desc: `Roast Masters, one of my earliest projects, stands as a static café website created for honing my HTML skills. The website showcases a variety of beverages and pastries, its aesthetic emphasizes the sophistication of serif fonts complemented by a soothing palette of green tones. It serves as a testament to my early exploration in web design, capturing the essence of simplicity with a touch of elegance.`,
+        desc: `Roast Masters, stands as a static café website. The website showcases a variety of beverages and pastries, its aesthetic emphasizes the sophistication of classic fonts complemented by a soothing palette of green tones.`,
         link: `https://roast-masters.vercel.app/index.html`,
         gallery: [
             // '/images/work/graphic/work-juan/01.png',
