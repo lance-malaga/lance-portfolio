@@ -1,0 +1,44 @@
+.branding__container {
+    padding: 35px;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+
+    h6 {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--color-orange);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+.colors__container {
+    width: 420px;
+    .color_palette {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    span {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .colors__grid {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        margin: 0 auto;
+    }
+    .colors__grid > div {
+        display: flex;
+        gap: 20px;
+        width: 50%
+    }
+}
+
+@media (min-width: 1600px) {
+    .branding__container {
+        padding: 35px 100px;
+    }
+}

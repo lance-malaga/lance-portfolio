@@ -1,8 +1,14 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import styles from './CaseStudyLayout.module.scss'
+// components
+import UserPersona from '../UserPersona';
+import Branding from '../Branding';
+// data
 import { work_case_study } from '@/data/work_case_study'
 
 export default function CaseStudyLayout() {
+    const [feature, setFeature] = useState(0)
     const data = work_case_study;
 
     return (
@@ -14,12 +20,7 @@ export default function CaseStudyLayout() {
             </div>
             <div className={styles.user_persona__container}>
                 <h4>{data.user_persona.title}</h4>
-                <Image
-                    src={data.user_persona.image}
-                    alt={'user-persona'}
-                    width={"auto"}
-                    height={510}
-                />
+                <UserPersona props={data.user_persona}/>
             </div>
             <div className={styles.solution__container}>
                 <div>
@@ -45,19 +46,19 @@ export default function CaseStudyLayout() {
             </div>
             <div className={styles.branding__container}>
                 <h4>{data.branding.title}</h4>
-                <Image
-                    src={data.branding.image}
-                    alt={'branding'}
-                    width={"auto"}
-                    height={"auto"}
-                />
+                <Branding props={data.branding} />
             </div>
             <div className={styles.features__container}>
                 <div className={styles.features__content}>
                     <div className={styles.features__items}>
                         <h4>FEATURES</h4>
                         {data.features.map((item, index) => (
-                            <div key={index} className={styles.item__details}>
+                            <div 
+                                key={index} 
+                                className={styles.item__details} 
+                                onClick={() => setFeature(index)}
+                                style={{backgroundColor: feature === index ? 'var(--color-white-bg)' : 'transparent'}}
+                            >
                                 <h2>{index + 1}</h2>
                                 <div>
                                     <p>{item.name}</p>
@@ -67,7 +68,7 @@ export default function CaseStudyLayout() {
                         ))}
                     </div>
                     <Image
-                        src={data.features[0].image}
+                        src={data.features[feature].image}
                         alt={'branding'}
                         width={"auto"}
                         height={"auto"}

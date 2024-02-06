@@ -24,6 +24,8 @@
 .architecture__container {
     img {
         margin-top: 25px;
+        height: 580px;
+        width: auto;
     }
 }
 
@@ -59,6 +61,16 @@
         }
     }
     .item__details:hover {
-        background-color: var(--color-white-bg);
+        background-color: var(--color-white-bg) !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    .architecture__container {
+        img {
+            width: 100%;
+            height: 800px;
+            object-fit: cover;
+        }
     }
 }
