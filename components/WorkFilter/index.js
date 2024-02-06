@@ -3,10 +3,9 @@ import styles from './WorkFilter.module.scss'
 import { work_categories } from '@/data/work_categoires'
 
 export default function WorkFilter({slug}) {
-    console.log(slug)
     return (
         <p className={styles.work__filter}> 
-            Filter by {' '}
+            Filter by: {' '}
             {work_categories.map((data, index) => (
                 <span key={index}>
                     <Link 

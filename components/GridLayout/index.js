@@ -19,9 +19,11 @@ export default function GridLayout({slug, filteredData}) {
                             height={400}
                         />
                         <div className={styles.overlay}>
-                            <h4 style={{maxWidth: index == 0 ? 'none' : '370px' }}>
-                                {data.title}
-                            </h4>
+                            <div>
+                                <h4 style={{maxWidth: index == 0 ? 'none' : '370px' }}>
+                                    {data.title}
+                                </h4>
+                            </div>
                         </div>
                     </Link>
                 </div>
