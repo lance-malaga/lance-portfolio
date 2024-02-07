@@ -25,7 +25,7 @@
     img {
         margin-top: 25px;
         height: 580px;
-        width: auto;
+        width: 100%;
     }
 }
 
@@ -68,9 +68,59 @@
 @media (min-width: 1600px) {
     .architecture__container {
         img {
-            width: 100%;
             height: 800px;
             object-fit: cover;
+        }
+    }
+}
+@media (max-width: 1300px) {
+    .solution__container {
+        flex-direction: column;
+        gap: 30px;
+        div {
+            max-width: none;
+        }
+        img {
+            margin: 0 auto;
+        }
+    }
+    .architecture__container {
+        img {
+            height: 450px;
+        }
+    }
+    .features__container {
+        .features__content {
+            flex-direction: column;
+            gap: 30px;
+        }
+        .features__items {
+            width: 60%;
+        }
+        img {
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 850px) {
+    .solution__container {
+        img {
+            width: 100%;
+        }
+    }
+    .architecture__container{
+        img {
+            height: auto;
+        }
+    }
+    .features__container {
+        .features__content {
+            img {
+                width: 100%;
+            }
+        }
+        .features__items {
+            width: 100%;
         }
     }
 }

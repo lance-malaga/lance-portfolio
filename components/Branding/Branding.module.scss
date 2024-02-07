@@ -3,6 +3,8 @@
     background-color: var(--color-white);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
 
     h6 {
         font-size: 16px;
@@ -33,12 +35,30 @@
     .colors__grid > div {
         display: flex;
         gap: 20px;
-        width: 50%
+        width: 50%;
     }
 }
 
 @media (min-width: 1600px) {
     .branding__container {
         padding: 35px 100px;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 1300px) {
+    .branding__container {
+        justify-content: space-around;
+    }
+}
+@media (max-width: 850px) {
+    .colors__container {
+        width: 100%;
+        .colors__grid > div {
+            justify-content: center;
+            width: 100%;
+        }
+        span {
+            font-size: 18px;
+        }
     }
 }
