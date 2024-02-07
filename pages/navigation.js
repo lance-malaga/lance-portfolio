@@ -42,7 +42,7 @@ export default function Navigation() {
                     <div className={styles.content__container}>
                         <div className={styles.nav_list__container}>
                             {navList.map((item, index) => (
-                                <Link href={item.link}>
+                                <Link href={item.link} key={index}>
                                     <h1>
                                         <span>0{index + 1} </span>{item.name}
                                     </h1>
