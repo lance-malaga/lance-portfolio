@@ -61,6 +61,10 @@
     .project__header {
         flex-direction: column-reverse;
         gap: 10px;
+        align-items: flex-start;
+        h2 {
+            font-size: 30px;
+        }
         a {
             margin-left: auto;
             padding: 0;
