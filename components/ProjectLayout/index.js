@@ -25,21 +25,23 @@ export default function ProjectLayout({project}) {
                     <p>TRY IT OUT</p>
                 </Link>
             }
-            <div className={styles.gallery}>
+            <div 
+                className={styles.gallery}
+                style={{
+                    gap: project.title === 'YORI' ? '20px' : null,
+                }}
+            >
                 {project.gallery && project.gallery.map((data, index) => (
-                    <button 
-                        key={index} 
-                        className={styles.overlay}
-                        // className={exapndImage ? styles.overlay : ''}
-                        // onClick={handleExpandImage}
-                    >
-                        <Image
-                            src={data}
-                            alt={'gallery-img ' + index}
-                            width={185}
-                            height={185}
-                        />
-                    </button>
+                    <Image 
+                        src={data}
+                        alt={'gallery-img'+`${index}`}
+                        width={1000}
+                        height={700}
+                        key={index}
+                        style={{
+                            width: project.title === 'YORI' ? 'auto' : null,
+                        }}
+                    />
                 ))}
             </div>
         </div>

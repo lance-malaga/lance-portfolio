@@ -8,15 +8,12 @@ export const work_graphic = [
         programs: 'ADOBE ILLUSTRATOR, FIGMA',
         desc: 'Embark on a heartwarming journey with Juan, a curious island boy, as he explores the enchanting destinations of Palawan, Philippines. Engage in a delightful trivia game at each stop, testing your knowledge and guiding Juan through the wonders of this tropical paradise.',
         link: `https://www.figma.com/proto/loJdVNJ84ASyT6uoo11hhy/Juan's-Palawan-Adventure?type=design&node-id=178-74969&t=xmmL0TX1STBRDZ0v-1&scaling=contain&page-id=74%3A2&mode=design`,
-        // gallery: [
-        //     '/images/work/graphic/work-juan/01.png',
-        //     '/images/work/graphic/work-juan/02.png',
-        //     '/images/work/graphic/work-juan/03.png',
-        //     '/images/work/graphic/work-juan/04.png',
-        //     '/images/work/graphic/work-juan/05.png',
-        //     '/images/work/graphic/work-juan/06.png',
-        //     '/images/work/graphic/work-juan/07.png',
-        // ]
+        gallery: [
+            '/images/work/graphic/work01-juan/gallery-01.png',
+            '/images/work/graphic/work01-juan/gallery-02.png',
+            '/images/work/graphic/work01-juan/gallery-03.png',
+            '/images/work/graphic/work01-juan/gallery-04.png',
+        ]
     },
     {
         title: `SPACES`,
