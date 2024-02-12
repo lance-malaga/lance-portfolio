@@ -8,15 +8,15 @@ import CustomHead from '@/components/CustomHead';
 import ProjectLayout from '@/components/ProjectLayout';
 import Banner from '@/components/Banner';
 import CaseStudyLayout from '@/components/CaseStudyLayout';
+import ProjectPortraitLayout from '@/components/ProjectPortraitLayout';
+import TopButton from '@/components/TopButton';
 
 // data
 import { work_development } from "@/data/work_development";
 import { work_graphic } from "@/data/work_graphic";
 
 // assets
-import backgroundWork from '@/public/images/background/background-work.png'
 import backgroundCase from '@/public/images/background/background-case.png'
-import ProjectPortraitLayout from '@/components/ProjectPortraitLayout';
 
 export async function getServerSideProps(context) {
 	const { params } = context;
@@ -46,15 +46,11 @@ export default function WorkDetails({category, projectName, project}) {
             return match.charAt(0).toUpperCase() + match.slice(1);
         })
     }
-    // const [exapndImage, setExpandImage] = useState(false);
-    // const handleExpandImage = () => {
-    //     setExpandImage(!exapndImage);
-    // }
 
     return (
         <div className={styles.work_details__container}>
             <Image
-				src={projectName == 'spurt' ? backgroundCase : backgroundWork}
+				src={backgroundCase}
 				alt='background-img-work'
 				width={"auto"}
 				height={"auto"}
@@ -73,6 +69,7 @@ export default function WorkDetails({category, projectName, project}) {
                     ) : (
                         <ProjectLayout project={project} />
                     )}
+                    <TopButton/>
                 </div>
             )}
         </div>

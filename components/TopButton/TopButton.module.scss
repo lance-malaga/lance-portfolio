@@ -1,0 +1,22 @@
+.top_button__container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    padding: 35px;
+    border: none;
+    background-color: var(--color-gray);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+.top_button__container:hover {
+    background-color: var(--color-orange);
+}
+.show__button {
+  opacity: 1;
+  visibility: visible;
+}
+  
