@@ -96,12 +96,12 @@ export const work_case_study = {
         },
         {
             name: 'PLANTAID',
-            desc: 'A personalized space to effortlessly manage and track the progress of your plants.',
+            desc: 'Introducing your AI assistant, "Chuey," from PlantAid! Chuey guides you through best practices and offers customized recommendations for each of your plants.',
             image: feature02,
         },
         {
             name: 'COMMUNITY GARDEN',
-            desc: 'A personalized space to effortlessly manage and track the progress of your plants.',
+            desc: 'Connect with like-minded individuals, share your experiences, and elevate your gardening knowledge.',
             image: feature03,
         },
     ]
