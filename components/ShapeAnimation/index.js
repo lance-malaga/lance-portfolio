@@ -21,7 +21,7 @@ export default function ShapeAnimation() {
                             </div>
                             { data.sample && (
                                 <div className={styles.backFace}>
-                                    <Link href={data.link}>
+                                    <Link href={data.link} target='_blank'>
                                         <Image
                                             src={data.sample}
                                             alt={"sample" + data.id}
@@ -47,7 +47,7 @@ export default function ShapeAnimation() {
                             </div>
                             { data.sample && (
                                 <div className={styles.backFace}>
-                                    <Link href={data.link}>
+                                    <Link href={data.link} target='_blank'>
                                         <Image
                                             src={data.sample}
                                             alt={"sample" + data.id}
