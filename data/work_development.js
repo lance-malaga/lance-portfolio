@@ -76,4 +76,17 @@ export const work_development = [
             '/images/work/development/work05-roast/gallery-03.png',
         ]
     },
+    {
+        title: `TOMO`,
+        slug: 'tomo',
+        subtitle: 'WEB DEVELOPMENT PROJECT',
+        grid_img: '/images/work/development/grid/work06-tomo.svg',
+        banner: '/images/work/development/work06-tomo.png',
+        programs: 'NEXTJS, TYPESCRIPT, FIGMA',
+        desc: 'TOMO is a dynamic weather website that informs users and gives them the ability to search for the current weather and 5 day forecast of a specific city. The website was developed through TypeScript and the openweathermap API.',
+        link: `https://weather-app-2024-five.vercel.app/`,
+        gallery: [
+            '/images/work/development/work06-tomo/gallery-01.png',
+        ]
+    },
 ]
