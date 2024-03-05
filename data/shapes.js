@@ -22,7 +22,7 @@ export const shapes = [
         id: 2,
         shape: shape02,
         sample: sample01,
-        link: '/work/graphic-design/juans-palawan-adventure',
+        link: '/work/graphic-design/juan',
     },
     {
         id: 3,
@@ -46,7 +46,7 @@ export const shapes = [
         id: 7,
         shape: shape07,
         sample: sample03,
-        link: '/work/graphic-design/spaces',
+        link: '/work/motion-graphics/tiny-living',
     },
     {
         id: 8,
