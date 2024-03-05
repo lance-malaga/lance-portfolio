@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 // data
 import { work_development } from "@/data/work_development";
 import { work_graphic } from "@/data/work_graphic";
+import { work_motion } from "@/data/work_motion";
 
 // assets
 import backgroundWork from '@/public/images/background/background-work.png'
@@ -22,7 +23,8 @@ export async function getServerSideProps(context) {
 	// Filter the data for the specific slug parameter
     const filteredData = (
         slug == 'development' ? work_development :
-        slug == 'graphic-design' ? work_graphic : ''
+        slug == 'graphic-design' ? work_graphic :
+        slug == 'motion-graphics' ? work_motion : ''
     );
 	
 	return {

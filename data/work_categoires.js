@@ -7,6 +7,10 @@ export const work_categories = [
         category: 'Graphic Design', 
         slug: '/work/graphic-design',
     },
+    {
+        category: 'Motion Graphics', 
+        slug: '/work/motion-graphics',
+    },
     // {
     //     category: 'UX/UI Design', 
     //     slug: '/work/ux-ui-design',

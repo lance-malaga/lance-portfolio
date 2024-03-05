@@ -14,6 +14,7 @@ import TopButton from '@/components/TopButton';
 // data
 import { work_development } from "@/data/work_development";
 import { work_graphic } from "@/data/work_graphic";
+import { work_motion } from '@/data/work_motion';
 
 // assets
 import backgroundCase from '@/public/images/background/background-case.png'
@@ -28,7 +29,8 @@ export async function getServerSideProps(context) {
 	// Use the data for the specific slug parameter
     const filteredData = (
         category == 'development' ? work_development :
-        category == 'graphic-design' ? work_graphic : ''
+        category == 'graphic-design' ? work_graphic :
+        category == 'motion-graphics' ? work_motion : ''
     );
     // Find the project with the same slug name
     const project = filteredData.find(data => data.slug == projectName)
