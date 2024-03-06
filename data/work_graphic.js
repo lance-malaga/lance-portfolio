@@ -6,7 +6,7 @@ export const work_graphic = [
         grid_img: '/images/work/graphic/grid/work01-zest.svg',
         banner: '/images/work/graphic/work01-zest.png',
         programs: 'ADOBE ILLUSTRATOR, PHOTOSHOP',
-        desc: 'Zest is a lively beverage product bursting with lemon, orange, and watermelon flavors. Its vibrant colors and refreshing imagery features floating fruit graphics to capture the essence of energy and positivity. Perfect for cooling off on a hot summer day, Zest promises a refreshing experience that uplifts the spirits.',
+        desc: 'Zest is an energy drink bursting with lemon, orange, and watermelon flavors. Its vibrant colors and refreshing imagery features floating fruit graphics to capture the essence of energy and positivity. Perfect for cooling off on a hot summer day, Zest promises a refreshing experience that uplifts the spirits.',
         link: ``,
         gallery: [
             '/images/work/graphic/work01-zest/gallery-01.png',
