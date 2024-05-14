@@ -27,7 +27,7 @@ export default function Home() {
 				<main className={styles.main__container}> 
 					<div className={styles.left__container}>
 						<h1>Lance Malaga</h1>
-						<h4>front-end web & app developer, ux/ui & graphic designer.</h4>
+						<h4>full stack developer, ux/ui & graphic designer.</h4>
 						<div className={styles.buttons__container}>
 							<Link href={`/work/development`}>
 								<Image
