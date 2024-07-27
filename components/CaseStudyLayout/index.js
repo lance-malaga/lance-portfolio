@@ -6,6 +6,9 @@ import UserPersona from '../UserPersona';
 import Branding from '../Branding';
 // data
 import { work_case_study } from '@/data/work_case_study'
+import Link from 'next/link';
+// assets
+import linkIcon from '@/public/icons/link-out-icon.svg'
 
 export default function CaseStudyLayout() {
     const [feature, setFeature] = useState(0)
@@ -14,6 +17,15 @@ export default function CaseStudyLayout() {
     return (
         <div className={styles.case_study__layout}>
             <p className={styles.description}>{data.desc}</p>
+            <Link href={`https://www.linkedin.com/posts/jimmylam6_spurt-aiforfoodsecurity-foodinsecurities-ugcPost-7139009163627528193-EpxQ?utm_source=share&utm_medium=member_desktop`} target='_blank' className={styles.link__out}>
+                <Image
+                    src={linkIcon}
+                    alt={'link-out-icon'}
+                    width={25}
+                    height={25}
+                />
+                <p>WATCH PREVIEW</p>
+            </Link>
             <div className={styles.problem__container}>
                 <h4>{data.problem.title}</h4>
                 <p>{data.problem.desc}</p>
