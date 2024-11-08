@@ -63,7 +63,7 @@ export const work_graphic = [
         grid_img: '/images/work/graphic/grid/work05-card.svg',
         banner: '/images/work/graphic/work05-card.png',
         programs: 'ADOBE PHOTOSHOP, FIGMA',
-        desc: 'This business card is designed to reflect the cohesive visual identity seen across my portfolio and other works. The assets were crafted in Figma, ensuring clean, precise elements, and then seamlessly composed in Photoshop to bring the final vision together. This card exemplifies a modern, consistent branding approach aimed at making a strong, lasting impression.',
+        desc: 'Crafted in Illustrator and Photoshop, this business card design features a bold, minimalist layout that highlights my initials in striking black with a gradient accent. The clean typography and modern color scheme reinforce a professional yet creative identity, making a memorable impression.',
         link: ``,
     },
     {
