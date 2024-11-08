@@ -13,6 +13,7 @@ import TopButton from '@/components/TopButton';
 
 // data
 import { work_development } from "@/data/work_development";
+import { work_ux_ui } from "@/data/work_ux_ui";
 import { work_graphic } from "@/data/work_graphic";
 import { work_motion } from '@/data/work_motion';
 
@@ -29,6 +30,7 @@ export async function getServerSideProps(context) {
 	// Use the data for the specific slug parameter
     const filteredData = (
         category == 'development' ? work_development :
+        category == 'ux-ui-design' ? work_ux_ui :
         category == 'graphic-design' ? work_graphic :
         category == 'motion-graphics' ? work_motion : ''
     );

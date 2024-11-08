@@ -4,6 +4,10 @@ export const work_categories = [
         slug: '/work/development',
     },
     {
+        category: 'UX/UI Design', 
+        slug: '/work/ux-ui-design',
+    },
+    {
         category: 'Graphic Design', 
         slug: '/work/graphic-design',
     },
@@ -11,10 +15,6 @@ export const work_categories = [
         category: 'Motion Graphics', 
         slug: '/work/motion-graphics',
     },
-    // {
-    //     category: 'UX/UI Design', 
-    //     slug: '/work/ux-ui-design',
-    // },
     // {
     //     category: 'Architecture', 
     //     slug: '/work/architecture',

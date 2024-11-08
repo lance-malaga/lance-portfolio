@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 
 // data
 import { work_development } from "@/data/work_development";
+import { work_ux_ui } from "@/data/work_ux_ui";
 import { work_graphic } from "@/data/work_graphic";
 import { work_motion } from "@/data/work_motion";
 
@@ -23,6 +24,7 @@ export async function getServerSideProps(context) {
 	// Filter the data for the specific slug parameter
     const filteredData = (
         slug == 'development' ? work_development :
+        slug == 'ux-ui-design' ? work_ux_ui :
         slug == 'graphic-design' ? work_graphic :
         slug == 'motion-graphics' ? work_motion : ''
     );
