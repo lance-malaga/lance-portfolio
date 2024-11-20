@@ -50,7 +50,7 @@ export default function Navigation() {
                             ))}
                         </div>
                         <div className={styles.link__container}>
-                            <Link href='https://www.linkedin.com/in/lance-matsuo-malaga/' target='_blank'>
+                            <Link href='https://www.linkedin.com/in/lance-malaga/' target='_blank'>
                                 <Image
                                     src={linkIcon}
                                     alt='link-icon'
