@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 
 // assets
 import backgroundAbout from '@/public/images/background/background-about.png'
-import profile_img from '@/public/images/profile.svg'
+import profile_img from '@/public/images/profile.png'
 import code_icon from '@/public/icons/code.png'
 import color_icon from '@/public/icons/color.png'
 
@@ -29,8 +29,8 @@ export default function About() {
                     <Image
                         src={profile_img}
                         alt='profile'
-                        width={"auto"}
-                        height={"auto"}
+                        width={440}
+                        height={430}
                         className={styles.profile_img}
                     />
                     <div>
