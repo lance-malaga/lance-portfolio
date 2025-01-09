@@ -5,7 +5,7 @@ import styles from './ProjectLayout.module.scss'
 // assets
 import linkIcon from '@/public/icons/link-out-icon.svg'
 
-export default function ProjectLayout({project}) {
+export default function ProjectLayout({project, category}) {
     return (
         <div className={styles.project__layout}>
             <p className={styles.programs_used}>
@@ -22,7 +22,7 @@ export default function ProjectLayout({project}) {
                         width={25}
                         height={25}
                     />
-                    <p>TRY IT OUT</p>
+                    <p>{category == 'motion-graphics' ? 'WATCH NOW' : 'TRY IT OUT' }</p>
                 </Link>
             }
             <div 

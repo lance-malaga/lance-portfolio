@@ -71,7 +71,10 @@ export default function WorkDetails({category, projectName, project}) {
                     {projectName == 'spurt' ? (
                         <CaseStudyLayout />
                     ) : (
-                        <ProjectLayout project={project} />
+                        <ProjectLayout 
+                            project={project}
+                            category={category}
+                        />
                     )}
                     <TopButton/>
                 </div>
