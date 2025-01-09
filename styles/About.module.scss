@@ -35,14 +35,22 @@
             }
             button {
                 display: flex;
+				align-items: center;
                 gap: 15px;
-                padding-bottom: 10px;
-                border-bottom: 2px solid var(--color-black);
                 transition: 0.5s all ease-in-out;
+
+				span {
+					padding-bottom: 5px;
+					border-bottom: 2px solid var(--color-black);
+				}
             }
             button:hover {
                 opacity: 0.5;
             }
+			.resume_container {
+				display: flex;
+				gap: 50px;
+			}
         }
     }
 }

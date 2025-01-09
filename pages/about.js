@@ -9,7 +9,8 @@ import Header from '@/components/Header'
 // assets
 import backgroundAbout from '@/public/images/background/background-about.png'
 import profile_img from '@/public/images/profile.svg'
-import download_icon from '@/public/icons/download-icon.svg'
+import code_icon from '@/public/icons/code.png'
+import color_icon from '@/public/icons/color.png'
 
 export default function About() {
     return (
@@ -37,17 +38,30 @@ export default function About() {
                         <p>
                             Hello, I'm Lance—a versatile professional with a proven track record in crafting impactful websites, mobile applications, and designs. My journey through Graphic Design, UI/UX Design, Frontend Development and Architecture has equipped me with a diverse skill set. I'm always eager to learn new things, and this passion for continuous growth fuels my ability to approach challenges from unique perspectives, fostering creativity and innovation in both development and design. I thrive on delivering solutions that not only meet but exceed the expectations of my clients.
                         </p>
-                        <Link href={'/resume.pdf'} target='_blank' download='resume'>
-                            <button>
-                                <Image
-                                    src={download_icon}
-                                    alt='download-icon'
-                                    width={18}
-                                    height={18}
-                                />
-                                <span>resume</span>
-                            </button>
-                        </Link>
+                        <div className={styles.resume_container}>
+                            <Link href={'/dev_resume.pdf'} target='_blank' download='Resume - Malaga, Lance [Developer]'>
+                                <button>
+                                    <Image
+                                        src={code_icon}
+                                        alt='download-icon'
+                                        width={28}
+                                        height={28}
+                                    />
+                                    <span>developer resume</span>
+                                </button>
+                            </Link>
+                            <Link href={'/design_resume.pdf'} target='_blank' download='Resume - Malaga, Lance [Designer]'>
+                                <button>
+                                    <Image
+                                        src={color_icon}
+                                        alt='download-icon'
+                                        width={28}
+                                        height={28}
+                                    />
+                                    <span>designer resume</span>
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                 </main>
             </div>
