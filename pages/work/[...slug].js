@@ -64,6 +64,7 @@ export default function WorkDetails({category, projectName, project}) {
             {project.portrait_layout ? (
                 <div className={styles.work_details__main_container}>
                     <ProjectPortraitLayout category={category} project={project} />
+                    <TopButton/>
                 </div>
             ) : (
                 <div className={styles.work_details__main_container}>
