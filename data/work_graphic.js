@@ -2,7 +2,7 @@ export const work_graphic = [
     {
         title: `ZEST`,
         slug: 'zest',
-        subtitle: 'INTERACTIVE GAME PROJECT',
+        subtitle: 'PACKAGING DESIGN PROJECT',
         grid_img: '/images/work/graphic/grid/work01-zest.svg',
         banner: '/images/work/graphic/work01-zest.png',
         programs: 'ADOBE ILLUSTRATOR, PHOTOSHOP',
