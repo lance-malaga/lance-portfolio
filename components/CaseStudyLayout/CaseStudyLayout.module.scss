@@ -79,6 +79,15 @@
     }
 }
 
+.other__container {
+    margin: 90px 0 0 ;
+    img {
+        margin-top: 15px;
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media (min-width: 1600px) {
     .architecture__container {
         img {

@@ -87,6 +87,15 @@ export default function CaseStudyLayout() {
                     />
                 </div>
             </div>
+            <div className={styles.other__container}>
+                <h4>{data.other.title}</h4>
+                <Image
+                    src={data.other.image}
+                    alt={'other-screens-image'}
+                    width={"auto"}
+                    height={"auto"}
+                />
+            </div>
         </div>
     )
 }

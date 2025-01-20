@@ -9,6 +9,8 @@ import font from '@/public/images/work/development/work01-spurt/poppins.svg'
 import feature01 from '@/public/images/work/development/work01-spurt/feature-your-garden.svg'
 import feature02 from '@/public/images/work/development/work01-spurt/feature-plantaid.svg'
 import feature03 from '@/public/images/work/development/work01-spurt/feature-community.svg'
+// other
+import otherImg from '@/public/images/work/development/work01-spurt/other.png'
 
 export const work_case_study = {
     title: 'Spurt',
@@ -104,5 +106,9 @@ export const work_case_study = {
             desc: 'Connect with like-minded individuals, share your experiences, and elevate your gardening knowledge.',
             image: feature03,
         },
-    ]
+    ],
+    other: {
+        title: 'OTHER SCREENS',
+        image: otherImg
+    }
 }
