@@ -7,24 +7,11 @@ export const work_development = [
         banner: '/images/work/development/work01-spurt/spurt-header.png',
     },
     {
-        title: `YORI`,
-        slug: 'yori',
-        subtitle: 'MOBILE DEVELOPMENT PROJECT',
-        grid_img: '/images/work/development/grid/work02-yori.svg',
-        banner: '/images/work/development/work02-yori.png',
-        programs: 'NEXTJS, ADOBE ILLUSTRATOR, AFTER EFFECTS, FIGMA',
-        desc: 'Yori is a mobile web application cook book that promotes a variety of healthy, affordable meals. Through its interactive children-friendly features, it provides a platform for families to involve their children in the cooking process. As well as an opportunity to educate and develop their cognitive abilities through learning about nutritional benefits.',
-        link: `https://yori-nutritional-foods.vercel.app/`,
-        gallery: [
-            '/images/work/development/work02-yori/gallery-01.png',
-            '/images/work/development/work02-yori/gallery-02.png',
-            '/images/work/development/work02-yori/gallery-03.png',
-            '/images/work/development/work02-yori/gallery-04.png',
-            '/images/work/development/work02-yori/gallery-05.png',
-            '/images/work/development/work02-yori/gallery-06.png',
-            '/images/work/development/work02-yori/gallery-07.png',
-            '/images/work/development/work02-yori/gallery-08.png',
-        ]
+        title: 'GLIDE AI',
+        slug: 'glide-ai',
+        subtitle: 'FLUTTER APP PROJECT',
+        grid_img: '/images/work/development/grid/work02-glide.svg',
+        banner: '/images/work/development/work02-glide/glide-header.png',
     },
     {
         title: `WEST POINT HOTEL`,
@@ -60,20 +47,19 @@ export const work_development = [
             '/images/work/development/work04-leni/gallery-04.png',
         ]
     },
-    
     {
-        title: `ROAST MASTERS`,
-        slug: 'roast-masters',
+        title: `RED SUN MENU`,
+        slug: 'redsun',
         subtitle: 'WEB DEVELOPMENT PROJECT',
-        grid_img: '/images/work/development/grid/work05-roast.svg',
-        banner: '/images/work/development/work05-roast.png',
-        programs: 'HTML5, CSS, ADOBE PHOTOSHOP, FIGMA',
-        desc: `Roast Masters, stands as a static café website. The website showcases a variety of beverages and pastries, its aesthetic emphasizes the sophistication of classic fonts complemented by a soothing palette of green tones.`,
-        link: `https://roast-masters.vercel.app/index.html`,
+        grid_img: '/images/work/development/grid/work05-redsun.svg',
+        banner: '/images/work/development/work05-redsun.png',
+        programs: 'NEXTJS, FIGMA',
+        progress: true,
+        desc: 'This website, "Red Sun Menu", is an e-commerce platform showcasing a variety of authentic Japanese dishes that can be ordered for delivery. The site highlights the diverse flavors of Japanese cuisine and allows customers to choose from a selection of prepared meals.',
+        link: `https://redsun-menu.vercel.app/`,
         gallery: [
-            '/images/work/development/work05-roast/gallery-01.png',
-            '/images/work/development/work05-roast/gallery-02.png',
-            '/images/work/development/work05-roast/gallery-03.png',
+            '/images/work/development/work05-redsun/gallery-01.png',
+            '/images/work/development/work05-redsun/gallery-02.png',
         ]
     },
     {
@@ -87,6 +73,41 @@ export const work_development = [
         link: `https://weather-app-2024-five.vercel.app/`,
         gallery: [
             '/images/work/development/work06-tomo/gallery-01.png',
+        ]
+    },
+    {
+        title: `ROAST MASTERS`,
+        slug: 'roast-masters',
+        subtitle: 'WEB DEVELOPMENT PROJECT',
+        grid_img: '/images/work/development/grid/work07-roast.svg',
+        banner: '/images/work/development/work07-roast.png',
+        programs: 'HTML5, CSS, ADOBE PHOTOSHOP, FIGMA',
+        desc: `Roast Masters, stands as a static café website. The website showcases a variety of beverages and pastries, its aesthetic emphasizes the sophistication of classic fonts complemented by a soothing palette of green tones.`,
+        link: `https://roast-masters.vercel.app/index.html`,
+        gallery: [
+            '/images/work/development/work07-roast/gallery-01.png',
+            '/images/work/development/work07-roast/gallery-02.png',
+            '/images/work/development/work07-roast/gallery-03.png',
+        ]
+    },
+    {
+        title: `YORI`,
+        slug: 'yori',
+        subtitle: 'MOBILE DEVELOPMENT PROJECT',
+        grid_img: '/images/work/development/grid/work08-yori.svg',
+        banner: '/images/work/development/work08-yori.png',
+        programs: 'NEXTJS, ADOBE ILLUSTRATOR, AFTER EFFECTS, FIGMA',
+        desc: 'Yori is a mobile web application cook book that promotes a variety of healthy, affordable meals. Through its interactive children-friendly features, it provides a platform for families to involve their children in the cooking process. As well as an opportunity to educate and develop their cognitive abilities through learning about nutritional benefits.',
+        link: `https://yori-nutritional-foods.vercel.app/`,
+        gallery: [
+            '/images/work/development/work08-yori/gallery-01.png',
+            '/images/work/development/work08-yori/gallery-02.png',
+            '/images/work/development/work08-yori/gallery-03.png',
+            '/images/work/development/work08-yori/gallery-04.png',
+            '/images/work/development/work08-yori/gallery-05.png',
+            '/images/work/development/work08-yori/gallery-06.png',
+            '/images/work/development/work08-yori/gallery-07.png',
+            '/images/work/development/work08-yori/gallery-08.png',
         ]
     },
 ]

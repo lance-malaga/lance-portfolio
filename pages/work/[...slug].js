@@ -10,6 +10,7 @@ import Banner from '@/components/Banner';
 import CaseStudyLayout from '@/components/CaseStudyLayout';
 import ProjectPortraitLayout from '@/components/ProjectPortraitLayout';
 import TopButton from '@/components/TopButton';
+import CaseStudyGlide from '@/components/CaseStudyGlide';
 
 // data
 import { work_development } from "@/data/work_development";
@@ -64,6 +65,11 @@ export default function WorkDetails({category, projectName, project}) {
             {project.portrait_layout ? (
                 <div className={styles.work_details__main_container}>
                     <ProjectPortraitLayout category={category} project={project} />
+                    <TopButton/>
+                </div>
+            ) : project.slug == 'glide-ai' ? (
+                <div className={styles.work_details__main_container}>
+                    <CaseStudyGlide category={category}/>
                     <TopButton/>
                 </div>
             ) : (
