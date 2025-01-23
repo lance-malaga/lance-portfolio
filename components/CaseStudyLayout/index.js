@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './CaseStudyLayout.module.scss'
 // components
 import UserPersona from '../UserPersona';
 import Branding from '../Branding';
 // data
 import { work_case_study } from '@/data/work_case_study'
-import Link from 'next/link';
 // assets
 import linkIcon from '@/public/icons/link-out-icon.svg'
 

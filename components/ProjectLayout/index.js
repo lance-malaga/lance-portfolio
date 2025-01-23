@@ -10,6 +10,12 @@ export default function ProjectLayout({project, category}) {
         <div className={styles.project__layout}>
             <p className={styles.programs_used}>
                 PROGRAMS USED: {project.programs}
+                { project.progress ? (
+                    <>
+                        <br/>
+                        STATUS: <span style={{color: "var(--color-orange)"}} >WORK IN PROGRESS</span>
+                    </>
+                ) : null }
             </p>
             <p className={styles.description}>
                 {project.desc}
