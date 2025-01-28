@@ -17,14 +17,14 @@ export default function CaseStudyLayout() {
     return (
         <div className={styles.case_study__layout}>
             <p className={styles.description}>{data.desc}</p>
-            <Link href={`https://www.linkedin.com/posts/jimmylam6_spurt-aiforfoodsecurity-foodinsecurities-ugcPost-7139009163627528193-EpxQ?utm_source=share&utm_medium=member_desktop`} target='_blank' className={styles.link__out}>
+            <Link href={`https://www.figma.com/proto/gpqY4VUMLCw8YpqCz8WLhs/Spurt-Prototype?kind=proto&node-id=764-5915&page-id=0%3A1&scaling=scale-down&starting-point-node-id=764%3A5850&t=1KU6tyRtdn0c0olW-1&type=design&viewport=-670%2C24%2C0.38`} target='_blank' className={styles.link__out}>
                 <Image
                     src={linkIcon}
                     alt={'link-out-icon'}
                     width={25}
                     height={25}
                 />
-                <p>WATCH PREVIEW</p>
+                <p>VIEW PROTOTYPE</p>
             </Link>
             <div className={styles.problem__container}>
                 <h4>{data.problem.title}</h4>

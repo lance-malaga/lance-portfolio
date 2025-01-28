@@ -28,7 +28,12 @@ export default function ProjectLayout({project, category}) {
                         width={25}
                         height={25}
                     />
-                    <p>{category == 'motion-graphics' ? 'WATCH NOW' : 'TRY IT OUT' }</p>
+                    <p>{category == 'motion-graphics' 
+                            ? 'WATCH NOW' :
+                        project.button != null 
+                            ? project.button
+                        : 'TRY IT OUT' 
+                    }</p>
                 </Link>
             }
             <div 

@@ -20,6 +20,7 @@ export const work_development = [
         grid_img: '/images/work/development/grid/work03-wph.svg',
         banner: '/images/work/development/work03-wph.png',
         programs: 'WORDPRESS, ADOBE ILLUSTRATOR, FIGMA',
+        button: 'VIEW PROTOTYPE',
         desc: 'Welcome to West Point Hotel, a luxurious 5-star resort situated in the heart of the Caribbean. Renowned for catering to young adults, businessmen, and couples, this destination exudes class and sophistication. In crafting the website for West Point Hotel, our aim was to capture its upscale ambiance through a modernist and minimalist design approach. The sleek and refined aesthetic mirrors the high-end experience the resort offers, providing a visually compelling online representation that aligns seamlessly with its luxurious identity.',
         link: `https://www.figma.com/proto/WzznboxjDFKUenSajAT4V6/West-Point-Hotel---Prototype?type=design&node-id=426-16312&t=fSxoymWYqUELEBM4-1&scaling=min-zoom&page-id=1%3A3&starting-point-node-id=516%3A12550&mode=design`,
         gallery: [
@@ -38,6 +39,7 @@ export const work_development = [
         grid_img: '/images/work/development/grid/work04-leni.svg',
         banner: '/images/work/development/work04-leni.png',
         programs: 'WORDPRESS, FIGMA',
+        button: 'VIEW PROTOTYPE',
         desc: `Lenipedia is a website dedicated to shedding light on the profound impact of Leni Robredo during her 2022 presidential campaign in the Philippines. By highlighting her work, ideals, accomplishments, and commitment to good governance, the platform showcases how her supporters were inspired to contribute both funds and volunteer efforts to fuel her entire campaign. The primary objective of Lenipedia is to narrate these events, emphasizing how a single woman ignited a spark of hope within Filipinos. The website's aesthetic draws inspiration from the campaign's theme, incorporating a vibrant pink palette to create an engaging and visually cohesive user experience.`,
         link: `https://www.figma.com/proto/2QAU2W1huwDCcffGdA4kSV/Midterm?type=design&node-id=1-2&t=34BW1f3kQpItGpxq-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design`,
         gallery: [
