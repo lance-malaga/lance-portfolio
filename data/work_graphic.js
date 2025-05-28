@@ -16,6 +16,11 @@ export const work_graphic = [
         ]
     },
     {
+        title: `HYGGE`,
+        slug: 'hygge',
+        grid_img: '/images/work/graphic/grid/work-hygge.png',
+    },
+    {
         title: `UNDER`,
         slug: 'under',
         subtitle: 'MAGAZINE PROJECT',

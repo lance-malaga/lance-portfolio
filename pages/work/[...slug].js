@@ -20,6 +20,7 @@ import { work_motion } from '@/data/work_motion';
 
 // assets
 import backgroundCase from '@/public/images/background/background-case.png'
+import GraphicHygge from '@/components/GraphicHygge';
 
 export async function getServerSideProps(context) {
 	const { params } = context;
@@ -70,6 +71,11 @@ export default function WorkDetails({category, projectName, project}) {
             ) : project.slug == 'glide-ai' ? (
                 <div className={styles.work_details__main_container}>
                     <CaseStudyGlide category={category}/>
+                    <TopButton/>
+                </div>
+            ) : project.slug == 'hygge' ? (
+                <div className={styles.work_details__main_container}>
+                    <GraphicHygge category={category}/>
                     <TopButton/>
                 </div>
             ) : (
