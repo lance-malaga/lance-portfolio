@@ -36,7 +36,7 @@ export const shapes = [
         id: 5,
         shape: shape05,
         sample: sample02,
-        link: '/work/development/spurt',
+        link: '/work/development/glide-ai',
     },
     {
         id: 6,
@@ -46,7 +46,7 @@ export const shapes = [
         id: 7,
         shape: shape07,
         sample: sample03,
-        link: '/work/motion-graphics/tiny-living',
+        link: '/work/graphic-design/hygge',
     },
     {
         id: 8,
