@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.scss'
+import { motion } from 'framer-motion'
 
 // components
 import Header from '@/components/Header'
@@ -25,7 +26,12 @@ export default function Home() {
 			<div className={styles.home__main_content}>
 				<Header/>
 				<main className={styles.main__container}> 
-					<div className={styles.left__container}>
+					<motion.div 
+						className={styles.left__container}
+						initial={{ opacity: 0, y: 50 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+					>
 						<h1>Lance Malaga</h1>
 						<h4>full stack developer, ux/ui & graphic designer.</h4>
 						<div className={styles.buttons__container}>
@@ -48,10 +54,15 @@ export default function Home() {
 								<p>more about me</p>
 							</Link>
 						</div>
-					</div>
-					<div className={styles.right__container}>
+					</motion.div>
+					<motion.div 
+						className={styles.right__container}
+						initial={{ opacity: 0, y: 50 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+					>
 						<ShapeAnimation/>
-					</div>
+					</motion.div>
 				</main>
 			</div>
 		</div>

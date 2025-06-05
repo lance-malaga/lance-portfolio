@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/Navigation.module.scss'
+import { motion } from 'framer-motion'
 
 // components
 import CustomHead from '@/components/CustomHead'
@@ -18,6 +19,22 @@ export default function Navigation() {
         {name: 'About', link: '/about'},
         {name: 'Contact', link: '/contact'},
     ];
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2, // delay between children
+                delayChildren: 0.3,   // initial delay
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, x: 80 },
+        show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
+    };
 
     return (
         <div className={styles.navigation__container}>
@@ -40,16 +57,28 @@ export default function Navigation() {
                         className={styles.nav_shape}
                     />
                     <div className={styles.content__container}>
-                        <div className={styles.nav_list__container}>
+                        <motion.div
+                            className={styles.nav_list__container}
+                            variants={containerVariants}
+                            initial="hidden"
+                            animate="show"
+                        >
                             {navList.map((item, index) => (
-                                <Link href={item.link} key={index}>
-                                    <h1>
-                                        <span>0{index + 1} </span>{item.name}
-                                    </h1>
-                                </Link>
+                                <motion.div variants={itemVariants} key={index}>
+                                    <Link href={item.link}>
+                                        <h1>
+                                            <span>0{index + 1} </span>{item.name}
+                                        </h1>
+                                    </Link>
+                                </motion.div>
                             ))}
-                        </div>
-                        <div className={styles.link__container}>
+                        </motion.div>
+                        <motion.div
+                            className={styles.link__container}
+                            initial={{ opacity: 0, x: 80 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.8 + navList.length * 0.1, duration: 0.8, ease: "easeOut" }}
+                        >
                             <Link href='https://www.linkedin.com/in/lance-malaga/' target='_blank'>
                                 <Image
                                     src={linkIcon}
@@ -68,7 +97,7 @@ export default function Navigation() {
                                 />
                                 <span>instagram</span>
                             </Link>
-                        </div>
+                        </motion.div>
                     </div> 
                 </main>
             </div>

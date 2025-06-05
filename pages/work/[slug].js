@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "@/styles/Work.module.scss"
+import { motion, AnimatePresence } from "framer-motion";
 
 // components
 import CustomHead from "@/components/CustomHead";
@@ -49,12 +50,27 @@ export default function Work({slug, filteredData}) {
             <CustomHead title={'Works'} />
             <div className={styles.work__main_content}>
                 <Header/>
-                <div className={styles.filter__section}>
+                <motion.div 
+                    className={styles.filter__section}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                >
                     <h2>WORK</h2>
                     <WorkFilter slug={slug}/>
-                </div>
+                </motion.div>
                 <main className={styles.main__container}>
-                    <GridLayout slug={slug} filteredData={filteredData}/>
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={slug}
+                            initial={{ opacity: 0, y: 50  }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                        >
+                            <GridLayout slug={slug} filteredData={filteredData}/>
+                        </motion.div>
+                    </AnimatePresence>
                 </main>
             </div>
         </div>
