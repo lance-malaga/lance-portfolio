@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/About.module.scss'
+import { motion } from 'framer-motion'
 
 // components
 import CustomHead from '@/components/CustomHead'
@@ -26,14 +27,24 @@ export default function About() {
             <div className={styles.about__main_content}>
                 <Header/>
                 <main>
-                    <Image
-                        src={profile_img}
-                        alt='profile'
-                        width={440}
-                        height={430}
-                        className={styles.profile_img}
-                    />
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
+                        <Image
+                            src={profile_img}
+                            alt='profile'
+                            width={440}
+                            height={430}
+                            className={styles.profile_img}
+                        />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+                    >
                         <h1>About</h1>
                         <p>
                             Hello, I'm Lance—a versatile professional with a proven track record in crafting impactful websites, mobile applications, and designs. My journey through Graphic Design, UI/UX Design, Frontend Development and Architecture has equipped me with a diverse skill set. I'm always eager to learn new things, and this passion for continuous growth fuels my ability to approach challenges from unique perspectives, fostering creativity and innovation in both development and design. I thrive on delivering solutions that not only meet but exceed the expectations of my clients.
@@ -62,7 +73,7 @@ export default function About() {
                                 </button>
                             </Link>
                         </div>
-                    </div>
+                    </motion.div>
                 </main>
             </div>
         </div>

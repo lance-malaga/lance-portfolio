@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './CaseStudyLayout.module.scss'
 // components
 import UserPersona from '../UserPersona';
 import Branding from '../Branding';
+import FadeInOnView from '../FadeInOnView';
 // data
 import { work_case_study } from '@/data/work_case_study'
 // assets
@@ -16,25 +18,32 @@ export default function CaseStudyLayout() {
 
     return (
         <div className={styles.case_study__layout}>
-            <p className={styles.description}>{data.desc}</p>
-            <Link href={`https://www.figma.com/proto/gpqY4VUMLCw8YpqCz8WLhs/Spurt-Prototype?kind=proto&node-id=764-5915&page-id=0%3A1&scaling=scale-down&starting-point-node-id=764%3A5850&t=1KU6tyRtdn0c0olW-1&type=design&viewport=-670%2C24%2C0.38`} target='_blank' className={styles.link__out}>
-                <Image
-                    src={linkIcon}
-                    alt={'link-out-icon'}
-                    width={25}
-                    height={25}
-                />
-                <p>VIEW PROTOTYPE</p>
-            </Link>
-            <div className={styles.problem__container}>
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+            >
+                <p className={styles.description}>{data.desc}</p>
+                <Link href={`https://www.figma.com/proto/gpqY4VUMLCw8YpqCz8WLhs/Spurt-Prototype?kind=proto&node-id=764-5915&page-id=0%3A1&scaling=scale-down&starting-point-node-id=764%3A5850&t=1KU6tyRtdn0c0olW-1&type=design&viewport=-670%2C24%2C0.38`} target='_blank' className={styles.link__out}>
+                    <Image
+                        src={linkIcon}
+                        alt={'link-out-icon'}
+                        width={25}
+                        height={25}
+                    />
+                    <p>VIEW PROTOTYPE</p>
+                </Link>
+            </motion.div>
+
+            <FadeInOnView className={styles.problem__container}>
                 <h4>{data.problem.title}</h4>
                 <p>{data.problem.desc}</p>
-            </div>
-            <div className={styles.user_persona__container}>
+            </FadeInOnView>
+            <FadeInOnView className={styles.user_persona__container}>
                 <h4>{data.user_persona.title}</h4>
                 <UserPersona props={data.user_persona}/>
-            </div>
-            <div className={styles.solution__container}>
+            </FadeInOnView>
+            <FadeInOnView className={styles.solution__container}>
                 <div>
                     <h4>{data.solution.title}</h4>
                     <p>{data.solution.desc}</p>
@@ -45,8 +54,8 @@ export default function CaseStudyLayout() {
                     width={"auto"}
                     height={"auto"}
                 />
-            </div>
-            <div className={styles.architecture__container}>
+            </FadeInOnView>
+            <FadeInOnView className={styles.architecture__container}>
                 <h4>{data.architecture.title}</h4>
                 <p>{data.architecture.desc}</p>
                 <Image
@@ -55,12 +64,12 @@ export default function CaseStudyLayout() {
                     width={"auto"}
                     height={"auto"}
                 />
-            </div>
-            <div className={styles.branding__container}>
+            </FadeInOnView>
+            <FadeInOnView className={styles.branding__container}>
                 <h4>{data.branding.title}</h4>
                 <Branding props={data.branding} />
-            </div>
-            <div className={styles.features__container}>
+            </FadeInOnView>
+            <FadeInOnView className={styles.features__container}>
                 <div className={styles.features__content}>
                     <div className={styles.features__items}>
                         <h4>FEATURES</h4>
@@ -86,8 +95,8 @@ export default function CaseStudyLayout() {
                         height={"auto"}
                     />
                 </div>
-            </div>
-            <div className={styles.other__container}>
+            </FadeInOnView>
+            <FadeInOnView className={styles.other__container}>
                 <h4>{data.other.title}</h4>
                 <Image
                     src={data.other.image}
@@ -95,7 +104,7 @@ export default function CaseStudyLayout() {
                     width={"auto"}
                     height={"auto"}
                 />
-            </div>
+            </FadeInOnView>
         </div>
     )
 }

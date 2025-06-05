@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from '@/styles/Contact.module.scss'
+import { motion } from 'framer-motion'
 
 // components
 import CustomHead from '@/components/CustomHead'
@@ -24,8 +25,19 @@ export default function Contact() {
             <div className={styles.contact__main_content}>
                 <Header/>
                 <main>
-                    <h1>Contact</h1>
-                    <div className={styles.content__container}>
+                    <motion.h1
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
+                        Contact
+                    </motion.h1>
+                    <motion.div 
+                        className={styles.content__container}
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+                    >
                         <div className={styles.mail__container}>
                             <h4>Mail</h4>
                             <a href='mailto: lance.matsuo@gmail.com' >lance.matsuo@gmail.com</a>
@@ -58,7 +70,7 @@ export default function Contact() {
                             </div>
                         </div>
 
-                    </div>
+                    </motion.div>
                 </main>
             </div>
         </div>

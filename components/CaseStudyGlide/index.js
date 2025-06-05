@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import styles from './CaseStudyGlide.module.scss'
 // data
 import { work_glide } from '@/data/work_glide'
@@ -9,13 +10,19 @@ import linkIcon from '@/public/icons/link-out-icon.svg'
 import mockup1 from '@/public/images/work/development/work02-glide/glide-mockup-01.png'
 import mockup2 from '@/public/images/work/development/work02-glide/glide-mockup-02.png'
 import mockup3 from '@/public/images/work/development/work02-glide/glide-mockup-03.png'
+import FadeInOnView from '../FadeInOnView'
 
 export default function CaseStudyGlide({category}) {
 	const project = work_glide;
 
     return (
         <div>
-            <div className={styles.project__header}>
+            <motion.div 
+                className={styles.project__header}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
                 <div>
                     <h2>{project.title}</h2>
                     <p>{project.subtitle}</p>
@@ -28,8 +35,13 @@ export default function CaseStudyGlide({category}) {
                         height={"auto"}
                     />
                 </Link>
-            </div>
-            <div className={styles.portait__layout}>
+            </motion.div>
+            <motion.div 
+                className={styles.portait__layout}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+            >
                 <Image
                     src={project.banner}
                     alt='banner-img'
@@ -58,8 +70,8 @@ export default function CaseStudyGlide({category}) {
                         </Link>
                     }
                 </div>
-            </div>
-            <div className={styles.intro__container}>
+            </motion.div>
+            <FadeInOnView className={styles.intro__container}>
                 <div>
                     <h4>PROBLEM</h4>
                     <p>Aviation professionals often struggle with quick <span className={styles.highligt}>access to reliable, context-specific information</span> from complex sources during flight preparation and operations.</p>
@@ -72,8 +84,8 @@ export default function CaseStudyGlide({category}) {
                     width={"auto"}
                     height={"auto"}
                 />
-            </div>
-			<div className={styles.ui__container}>
+            </FadeInOnView>
+			<FadeInOnView className={styles.ui__container}>
                 <h4>UI IMPROVEMENT EXAMPLES</h4>
 				<div>
 					<Image
@@ -97,8 +109,8 @@ export default function CaseStudyGlide({category}) {
 						</div>
 					</div>
 				</div>
-            </div>
-			<div className={styles.other__container}>
+            </FadeInOnView>
+			<FadeInOnView className={styles.other__container}>
                 <h4>OTHER SCREENS</h4>
                 <Image
                     src={mockup3}
@@ -106,7 +118,7 @@ export default function CaseStudyGlide({category}) {
                     width={"auto"}
                     height={"auto"}
                 />
-            </div>
+            </FadeInOnView>
         </div>
     )
 }

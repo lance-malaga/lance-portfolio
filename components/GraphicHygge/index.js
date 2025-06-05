@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import styles from './GraphicHygge.module.scss'
 // data
 import { work_hygge } from '@/data/work_hygge'
@@ -9,13 +10,19 @@ import linkIcon from '@/public/icons/link-out-icon.svg'
 import mockup1 from '@/public/images/work/graphic/work-hygge/branding.png'
 import mockup2 from '@/public/images/work/graphic/work-hygge/flyer.png'
 import mockup3 from '@/public/images/work/graphic/work-hygge/newsletters.png'
+import FadeInOnView from '../FadeInOnView'
 
 export default function GraphicHygge({category}) {
 	const project = work_hygge;
 
     return (
         <div>
-            <div className={styles.project__header}>
+            <motion.div 
+                className={styles.project__header}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
                 <div>
                     <h2>{project.title}</h2>
                     <p>{project.subtitle}</p>
@@ -28,8 +35,13 @@ export default function GraphicHygge({category}) {
                         height={"auto"}
                     />
                 </Link>
-            </div>
-            <div className={styles.portait__layout}>
+            </motion.div>
+            <motion.div 
+                className={styles.portait__layout}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+            >
                 <Image
                     src={project.banner}
                     alt='banner-img'
@@ -57,8 +69,8 @@ export default function GraphicHygge({category}) {
                         </Link>
                     }
                 </div>
-            </div>
-			<div className={styles.other__container}>
+            </motion.div>
+			<FadeInOnView className={styles.other__container}>
                 <h4>BRANDING</h4>
                 <Image
                     src={mockup1}
@@ -66,8 +78,8 @@ export default function GraphicHygge({category}) {
                     width={"auto"}
                     height={"auto"}
                 />
-            </div>
-			<div className={styles.other__container}>
+            </FadeInOnView>
+			<FadeInOnView className={styles.other__container}>
                 <h4>FLYER PROJECT</h4>
                 <Image
                     src={mockup2}
@@ -75,8 +87,8 @@ export default function GraphicHygge({category}) {
                     width={"auto"}
                     height={"auto"}
                 />
-            </div>
-			<div className={styles.other__container}>
+            </FadeInOnView>
+			<FadeInOnView className={styles.other__container}>
                 <h4>NEWSLETTERS</h4>
                 <Image
                     src={mockup3}
@@ -84,7 +96,7 @@ export default function GraphicHygge({category}) {
                     width={"auto"}
                     height={"auto"}
                 />
-            </div>
+            </FadeInOnView>
         </div>
     )
 }
