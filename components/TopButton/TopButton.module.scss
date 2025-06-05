@@ -16,7 +16,16 @@
     background-color: var(--color-orange);
 }
 .show__button {
-  opacity: 1;
-  visibility: visible;
+	opacity: 1;
+	visibility: visible;
 }
-  
+
+@media (max-width: 600px) {
+	.top_button__container {
+		padding: 30px;
+	}
+    .top_button__container img {
+    	width: 25px;
+		height: 25px;
+    }
+}
