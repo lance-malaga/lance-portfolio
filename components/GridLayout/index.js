@@ -23,6 +23,9 @@ export default function GridLayout({slug, filteredData}) {
                                 <h4 style={{maxWidth: index == 0 ? 'none' : '370px' }}>
                                     {data.title}
                                 </h4>
+                                <p>
+                                    {data.subtitle}
+                                </p>
                             </div>
                         </div>
                     </Link>

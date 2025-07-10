@@ -2,7 +2,7 @@ export const work_ux_ui = [
     {
         title: `REVERIE`,
         slug: 'reverie',
-        subtitle: 'FIGMA PROJECT',
+        subtitle: 'WEB DESIGN | UX/UI | FIGMA',
         grid_img: '/images/work/ux-ui/grid/work01-reverie.svg',
         banner: '/images/work/ux-ui/work01-reverie.png',
         programs: 'FIGMA',
@@ -18,7 +18,7 @@ export const work_ux_ui = [
     {
         title: `GAIA`,
         slug: 'gaia',
-        subtitle: 'FIGMA PROJECT',
+        subtitle: 'WEB DESIGN | UX/UI | FIGMA',
         grid_img: '/images/work/ux-ui/grid/work02-gaia.svg',
         banner: '/images/work/ux-ui/work02-gaia.png',
         programs: 'FIGMA',

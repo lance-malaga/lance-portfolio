@@ -2,7 +2,7 @@ export const work_motion = [
     {
         title: `TINY LIVING`,
         slug: 'tiny-living',
-        subtitle: 'MOTION GRAPHICS',
+        subtitle: 'MOTION GRAPHICS | GRAPHIC DESIGN',
         grid_img: '/images/work/motion/work01-spaces.svg',
         banner: '/images/work/motion/work01-spaces.png',
         programs: 'ADOBE ILLUSTRATOR, AFTER EFFECTS',
@@ -12,7 +12,7 @@ export const work_motion = [
     {
         title: `ROAD TRIP`,
         slug: 'road-trip',
-        subtitle: 'MOTION GRAPHICS',
+        subtitle: 'MOTION GRAPHICS | GRAPHIC DESIGN',
         grid_img: '/images/work/motion/work02-car.svg',
         banner: '/images/work/motion/work02-car.png',
         programs: 'ADOBE ILLUSTRATOR, AFTER EFFECTS',
@@ -22,7 +22,7 @@ export const work_motion = [
     {
         title: `JEEPNEY TOUR`,
         slug: 'jeepney-tour',
-        subtitle: 'MOTION GRAPHICS',
+        subtitle: 'MOTION GRAPHICS | GRAPHIC DESIGN',
         grid_img: '/images/work/motion/work03-tour.svg',
         banner: '/images/work/motion/work03-tour.png',
         programs: 'ADOBE ILLUSTRATOR, PHOTOSHOP, AFTER EFFECTS',

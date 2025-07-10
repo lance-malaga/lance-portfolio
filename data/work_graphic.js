@@ -2,7 +2,7 @@ export const work_graphic = [
     {
         title: `ZEST`,
         slug: 'zest',
-        subtitle: 'PACKAGING DESIGN PROJECT',
+        subtitle: 'PRODUCT DESIGN | GRAPHIC DESIGN | BRANDING',
         grid_img: '/images/work/graphic/grid/work01-zest.svg',
         banner: '/images/work/graphic/work01-zest.png',
         programs: 'ADOBE ILLUSTRATOR, PHOTOSHOP',
@@ -17,13 +17,14 @@ export const work_graphic = [
     },
     {
         title: `HYGGE`,
+        subtitle: 'BRANDING | GRAPHIC DESIGN | DIGITAL DESIGN | PRINT',
         slug: 'hygge',
         grid_img: '/images/work/graphic/grid/work-hygge.png',
     },
     {
         title: `UNDER`,
         slug: 'under',
-        subtitle: 'MAGAZINE PROJECT',
+        subtitle: 'MAGAZINE | GRAPHIC DESIGN | PRINT',
         grid_img: '/images/work/graphic/grid/work02-under.svg',
         banner: '/images/work/graphic/work02-under.png',
         programs: 'ADOBE ILLUSTRATOR, INDESIGN',
@@ -38,7 +39,7 @@ export const work_graphic = [
     {
         title: `HAPPY DAYS`,
         slug: 'happy-days',
-        subtitle: 'MENU PROJECT',
+        subtitle: 'MENU | GRAPHIC DESIGN',
         grid_img: '/images/work/graphic/grid/work03-menu.png',
         banner: '/images/work/graphic/work03-menu.png',
         programs: 'ADOBE ILLUSTRATOR, INDESIGN',
@@ -52,7 +53,7 @@ export const work_graphic = [
     {
         title: `HARRY STYLES`,
         slug: 'harry-styles',
-        subtitle: 'ILLUSTRATION PROJECT',
+        subtitle: 'POSTER | ILLUSTRATION | GRAPHIC DESIGN',
         grid_img: '/images/work/graphic/grid/work04-harry.svg',
         banner: '/images/work/graphic/work04-harry.png',
         programs: 'ADOBE ILLUSTRATOR, PHOTOSHOP',
@@ -67,7 +68,7 @@ export const work_graphic = [
     {
         title: `LM.`,
         slug: 'name-card',
-        subtitle: 'NAME CARD PROJECT',
+        subtitle: 'BRANDING | GRAPHIC DESIGN | PRINT',
         grid_img: '/images/work/graphic/grid/work05-card.svg',
         banner: '/images/work/graphic/work05-card.png',
         programs: 'ADOBE PHOTOSHOP, FIGMA',
@@ -77,7 +78,7 @@ export const work_graphic = [
     {
         title: `DREAM`,
         slug: 'dream',
-        subtitle: 'MAGAZINE PROJECT',
+        subtitle: 'MAGAZINE | GRAPHIC DESIGN',
         grid_img: '/images/work/graphic/grid/work06-dream.svg',
         banner: '/images/work/graphic/work06-dream.png',
         programs: 'ADOBE PHOTOSHOP',
@@ -88,7 +89,7 @@ export const work_graphic = [
     {
         title: `JUAN`,
         slug: 'juan',
-        subtitle: 'INTERACTIVE GAME PROJECT',
+        subtitle: 'INTERACTIVE GAME | GRAPHIC DESIGN | ILLUSTRATION',
         grid_img: '/images/work/graphic/grid/work07-juan.svg',
         banner: '/images/work/graphic/work07-juan.png',
         programs: 'ADOBE ILLUSTRATOR, FIGMA',
@@ -104,7 +105,7 @@ export const work_graphic = [
     {
         title: `FLOATING ISLAND`,
         slug: 'floating-island',
-        subtitle: 'ILLUSTRATION PROJECT',
+        subtitle: 'ILLUSTRATION | GRAPHIC DESIGN',
         grid_img: '/images/work/graphic/grid/work08-island.svg',
         banner: '/images/work/graphic/work08-island.png',
         programs: 'ADOBE ILLUSTRATOR',

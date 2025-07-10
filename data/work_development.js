@@ -2,21 +2,21 @@ export const work_development = [
     {
         title: 'SPURT',
         slug: 'spurt',
-        subtitle: 'MOBILE DEVELOPMENT PROJECT | CASE STUDY',
+        subtitle: 'MOBILE DEVELOPMENT | UX/UI | GRAPHIC DESIGN | BRANDING',
         grid_img: '/images/work/development/grid/work01-spurt.svg',
         banner: '/images/work/development/work01-spurt/spurt-header.png',
     },
     {
         title: 'GLIDE AI',
         slug: 'glide-ai',
-        subtitle: 'FLUTTER APP PROJECT',
+        subtitle: 'FLUTTER APP | MOBILE DEVELOPMENT | BRANDING | UX/UI',
         grid_img: '/images/work/development/grid/work02-glide.svg',
         banner: '/images/work/development/work02-glide/glide-header.png',
     },
     {
         title: `WEST POINT HOTEL`,
         slug: 'west-point-hotel',
-        subtitle: 'WORDPRESS PROJECT',
+        subtitle: 'WORDPRESS | UX/UI | BRANDING',
         grid_img: '/images/work/development/grid/work03-wph.svg',
         banner: '/images/work/development/work03-wph.png',
         programs: 'WORDPRESS, ADOBE ILLUSTRATOR, FIGMA',
@@ -35,7 +35,7 @@ export const work_development = [
     {
         title: `LENIPEDIA`,
         slug: 'lenipedia',
-        subtitle: 'WORDPRESS PROJECT',
+        subtitle: 'WORDPRESS | UX/UI',
         grid_img: '/images/work/development/grid/work04-leni.svg',
         banner: '/images/work/development/work04-leni.png',
         programs: 'WORDPRESS, FIGMA',
@@ -52,7 +52,7 @@ export const work_development = [
     {
         title: `RED SUN MENU`,
         slug: 'redsun',
-        subtitle: 'WEB DEVELOPMENT PROJECT',
+        subtitle: 'WEB DEVELOPMENT | WEB DESIGN',
         grid_img: '/images/work/development/grid/work05-redsun.svg',
         banner: '/images/work/development/work05-redsun.png',
         programs: 'NEXTJS, FIGMA',
@@ -64,38 +64,23 @@ export const work_development = [
             '/images/work/development/work05-redsun/gallery-02.png',
         ]
     },
-    {
-        title: `TOMO`,
-        slug: 'tomo',
-        subtitle: 'WEB DEVELOPMENT PROJECT',
-        grid_img: '/images/work/development/grid/work06-tomo.svg',
-        banner: '/images/work/development/work06-tomo.png',
-        programs: 'NEXTJS, TYPESCRIPT, FIGMA',
-        desc: 'TOMO is a dynamic weather website that informs users and gives them the ability to search for the current weather and 5 day forecast of a specific city. The website was developed through TypeScript and the openweathermap API.',
-        link: `https://weather-app-2024-five.vercel.app/`,
-        gallery: [
-            '/images/work/development/work06-tomo/gallery-01.png',
-        ]
-    },
-    {
-        title: `ROAST MASTERS`,
-        slug: 'roast-masters',
-        subtitle: 'WEB DEVELOPMENT PROJECT',
-        grid_img: '/images/work/development/grid/work07-roast.svg',
-        banner: '/images/work/development/work07-roast.png',
-        programs: 'HTML5, CSS, ADOBE PHOTOSHOP, FIGMA',
-        desc: `Roast Masters, stands as a static café website. The website showcases a variety of beverages and pastries, its aesthetic emphasizes the sophistication of classic fonts complemented by a soothing palette of green tones.`,
-        link: `https://roast-masters.vercel.app/index.html`,
-        gallery: [
-            '/images/work/development/work07-roast/gallery-01.png',
-            '/images/work/development/work07-roast/gallery-02.png',
-            '/images/work/development/work07-roast/gallery-03.png',
-        ]
-    },
+    // {
+    //     title: `TOMO`,
+    //     slug: 'tomo',
+    //     subtitle: 'WEB DEVELOPMENT | ',
+    //     grid_img: '/images/work/development/grid/work06-tomo.svg',
+    //     banner: '/images/work/development/work06-tomo.png',
+    //     programs: 'NEXTJS, TYPESCRIPT, FIGMA',
+    //     desc: 'TOMO is a dynamic weather website that informs users and gives them the ability to search for the current weather and 5 day forecast of a specific city. The website was developed through TypeScript and the openweathermap API.',
+    //     link: `https://weather-app-2024-five.vercel.app/`,
+    //     gallery: [
+    //         '/images/work/development/work06-tomo/gallery-01.png',
+    //     ]
+    // },
     {
         title: `YORI`,
         slug: 'yori',
-        subtitle: 'MOBILE DEVELOPMENT PROJECT',
+        subtitle: 'MOBILE DEVELOPMENT | UX/UI | GRAPHIC DESIGN',
         grid_img: '/images/work/development/grid/work08-yori.svg',
         banner: '/images/work/development/work08-yori.png',
         programs: 'NEXTJS, ADOBE ILLUSTRATOR, AFTER EFFECTS, FIGMA',
@@ -110,6 +95,21 @@ export const work_development = [
             '/images/work/development/work08-yori/gallery-06.png',
             '/images/work/development/work08-yori/gallery-07.png',
             '/images/work/development/work08-yori/gallery-08.png',
+        ]
+    },
+    {
+        title: `ROAST MASTERS`,
+        slug: 'roast-masters',
+        subtitle: 'WEB DEVELOPMENT | WEB DESIGN',
+        grid_img: '/images/work/development/grid/work07-roast.svg',
+        banner: '/images/work/development/work07-roast.png',
+        programs: 'HTML5, CSS, ADOBE PHOTOSHOP, FIGMA',
+        desc: `Roast Masters, stands as a static café website. The website showcases a variety of beverages and pastries, its aesthetic emphasizes the sophistication of classic fonts complemented by a soothing palette of green tones.`,
+        link: `https://roast-masters.vercel.app/index.html`,
+        gallery: [
+            '/images/work/development/work07-roast/gallery-01.png',
+            '/images/work/development/work07-roast/gallery-02.png',
+            '/images/work/development/work07-roast/gallery-03.png',
         ]
     },
 ]
