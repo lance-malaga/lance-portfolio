@@ -45,7 +45,7 @@ export default function Home() {
 						transition={{ duration: 0.8, ease: "easeOut" }}
 					>
 						<h1>Lance Malaga</h1>
-						<h4>full stack developer, ux/ui & graphic designer.</h4>
+						<h4>graphic designer, ux/ui designer & front-end developer</h4>
 						{/* <div className={styles.buttons__container}>
 							<Link href={`/work/development`}>
 								<Image
