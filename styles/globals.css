@@ -8,11 +8,13 @@
 --color-white: #F3F2F9;
 --color-white-bg: #E7E6ED;
 --color-gray: #CECECE;
+--color-spurt-highlight: #F0F3E7;
 
 
 /* Fonts */
 --primary-font: 'Roboto Mono', sans-serif;
 --secondary-font: 'Druk', sans-serif;
+--tertiary-font:  'DM Sans', sans-serif;
 --title-desktop: 80px;
 --body-font-size-desktop: 16px;
 --body-font-size-mobile: 14px;
