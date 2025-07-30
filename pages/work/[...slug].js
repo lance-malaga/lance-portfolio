@@ -1,16 +1,16 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
 import styles from '@/styles/WorkDetails.module.scss'
 
 // components
 import CustomHead from '@/components/CustomHead';
 import ProjectLayout from '@/components/ProjectLayout';
 import Banner from '@/components/Banner';
-import CaseStudyLayout from '@/components/CaseStudyLayout';
 import ProjectPortraitLayout from '@/components/ProjectPortraitLayout';
 import TopButton from '@/components/TopButton';
 import CaseStudyGlide from '@/components/CaseStudyGlide';
+import Spurt from '@/components/CaseStudyProject/Spurt';
+import FadeInOnView from '@/components/FadeInOnView';
+import Footer from '@/components/Footer';
 
 // data
 import { work_development } from "@/data/work_development";
@@ -21,6 +21,7 @@ import { work_motion } from '@/data/work_motion';
 // assets
 import backgroundCase from '@/public/images/background/background-case.png'
 import GraphicHygge from '@/components/GraphicHygge';
+import Hygge from '@/components/CaseStudyProject/Hygge';
 
 export async function getServerSideProps(context) {
 	const { params } = context;
@@ -54,44 +55,51 @@ export default function WorkDetails({category, projectName, project}) {
     }
 
     return (
-        <div className={styles.work_details__container}>
-            <Image
-				src={backgroundCase}
-				alt='background-img-work'
-				width={"auto"}
-				height={"auto"}
-				className={styles.background_img}
-			/>
-            <CustomHead title={`Works | ${formatProjectName(project.title)}`}/>
-            {project.portrait_layout ? (
-                <div className={styles.work_details__main_container}>
-                    <ProjectPortraitLayout category={category} project={project} />
-                    <TopButton/>
-                </div>
-            ) : project.slug == 'glide-ai' ? (
-                <div className={styles.work_details__main_container}>
-                    <CaseStudyGlide category={category}/>
-                    <TopButton/>
-                </div>
-            ) : project.slug == 'hygge' ? (
-                <div className={styles.work_details__main_container}>
-                    <GraphicHygge category={category}/>
-                    <TopButton/>
-                </div>
-            ) : (
-                <div className={styles.work_details__main_container}>
-                    <Banner category={category} project={project} />
-                    {projectName == 'spurt' ? (
-                        <CaseStudyLayout />
+        <>
+            { projectName == "spurt" ?
+                <Spurt/>
+            : projectName == "hygge" ?
+                <Hygge/>
+            : 
+                <div className={styles.work_details__container}>
+                    <Image
+                        src={backgroundCase}
+                        alt='background-img-work'
+                        width={"auto"}
+                        height={"auto"}
+                        className={styles.background_img}
+                    />
+                    <CustomHead title={`Works | ${formatProjectName(project.title)}`}/>
+                    {project.portrait_layout ? (
+                        <div className={styles.work_details__main_container}>
+                            <ProjectPortraitLayout category={category} project={project} />
+                            <TopButton/>
+                        </div>
+                    ) : project.slug == 'glide-ai' ? (
+                        <div className={styles.work_details__main_container}>
+                            <CaseStudyGlide category={category}/>
+                            <TopButton/>
+                        </div>
+                    ) : project.slug == 'hygge-graphic' ? (
+                        <div className={styles.work_details__main_container}>
+                            <GraphicHygge category={category}/>
+                            <TopButton/>
+                        </div>
                     ) : (
-                        <ProjectLayout 
-                            project={project}
-                            category={category}
-                        />
+                        <div className={styles.work_details__main_container}>
+                            <Banner category={category} project={project} />
+                            <ProjectLayout 
+                                project={project}
+                                category={category}
+                            />
+                            <TopButton/>
+                        </div>
                     )}
-                    <TopButton/>
+                    <FadeInOnView className={styles.footer__container}>
+                        <Footer/>
+                    </FadeInOnView>
                 </div>
-            )}
-        </div>
+            }
+        </>
     )
 }

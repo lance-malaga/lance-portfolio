@@ -80,13 +80,17 @@
 }
 @media (max-width: 820px) {
 	.grid__layout {
+        grid-gap: 30px;
 		.work__content {
-            height: 300px;
+            height: auto;
             .overlay {
                 h4 {
                     font-size: 30px;
                 }
             }
+        }
+        .work__content:first-child {
+            height: auto;
         }
 	}
 }
@@ -94,13 +98,7 @@
 	.grid__layout {
         display: flex;
         flex-direction: column;
-        grid-gap: 25px;
-        .work__content {
-            height: 400px;
-        }
-        .work__content:first-child {
-            height: 200px;
-        }
+        grid-gap: 20px;
 	}
 }
 @media (max-width: 500px) {

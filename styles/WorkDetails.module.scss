@@ -1,5 +1,5 @@
 .work_details__container {
-	padding: 60px 220px;
+	// padding: 100px 120px;
 	height: auto;
 	position: relative;
 
@@ -15,6 +15,13 @@
 		right: 0;
 	}
 }
+.work_details__main_container{
+	padding: 100px 120px;
+}
+.footer__container {
+	max-width: var(--max-width-screen);
+	margin: 0 auto;
+}
 
 @media (min-width: 1440px) {
     .work_details__main_container {
@@ -23,22 +30,22 @@
 	}
 }
 @media (min-width: 1600px) {
-    .work_details__container {
+    .work_details__main_container {
 		padding: 120px 0;
 	}
 }
 @media (max-width: 1024px) {
-	.work_details__container {
-		padding: 60px 100px;
+	.work_details__main_container {
+		padding: 100px 100px;
 	}
 }
 @media (max-width: 700px) {
-	.work_details__container {
+	.work_details__main_container {
 		padding: 50px;
 	}
 }
 @media (max-width: 500px) {
-	.work_details__container {
+	.work_details__main_container {
 		padding: 40px 20px;
 	}
 }

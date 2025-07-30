@@ -1,9 +1,15 @@
 export const work_ux_ui = [
     {
+        title: 'Hygge Design House',
+        slug: 'hygge',
+        subtitle: 'UX/UI | WEB DESIGN | BRANDING',
+        grid_img: '/images/work/ux-ui/grid/work-hygge.svg',
+    },
+    {
         title: `REVERIE`,
         slug: 'reverie',
         subtitle: 'WEB DESIGN | UX/UI | FIGMA',
-        grid_img: '/images/work/ux-ui/grid/work01-reverie.svg',
+        grid_img: '/images/work/ux-ui/grid/work-reverie.svg',
         banner: '/images/work/ux-ui/work01-reverie.png',
         programs: 'FIGMA',
         desc: 'Designed in Figma, the Reverie website combines elegance with functionality, using a vibrant yellow theme to create a bold, upscale feel. The layout enhances the user experience with intuitive sections for collections, best sellers, and personalized assistance. Each design element is crafted to create a visually appealing, curated shopping journey, with a focus on making the customer feel valued and stylish.',
@@ -19,7 +25,7 @@ export const work_ux_ui = [
         title: `GAIA`,
         slug: 'gaia',
         subtitle: 'WEB DESIGN | UX/UI | FIGMA',
-        grid_img: '/images/work/ux-ui/grid/work02-gaia.svg',
+        grid_img: '/images/work/ux-ui/grid/work-gaia.svg',
         banner: '/images/work/ux-ui/work02-gaia.png',
         programs: 'FIGMA',
         desc: `Designed in Figma, this website for Gaia Co. captures the artistry of pottery through an elegant and inviting layout. I used a palette of earthy tones to reflect the brand's connection to natural materials and craftsmanship. Each element of the design was carefully chosen to evoke warmth and creativity, making the site both visually appealing and informative.`,

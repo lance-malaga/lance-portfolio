@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 // components
 import CustomHead from "@/components/CustomHead";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import FadeInOnView from "@/components/FadeInOnView";
 
 // data
 import { work_development } from "@/data/work_development";
@@ -72,6 +74,9 @@ export default function Work({slug, filteredData}) {
                         </motion.div>
                     </AnimatePresence>
                 </main>
+                <FadeInOnView className={styles.footer__container}>
+                    <Footer/>
+                </FadeInOnView>
             </div>
         </div>
     )
