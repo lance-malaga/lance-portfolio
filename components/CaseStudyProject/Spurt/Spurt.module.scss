@@ -1,0 +1,258 @@
+.case_study {
+	position: relative;
+	
+	&__background_img {
+		z-index: -1;
+		position: absolute;
+		min-height: 100vh;
+		height: -webkit-fill-available;
+		width: 100%;
+		object-fit: cover;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	
+	&__banner {
+		padding: 100px 120px 0;
+		
+		.overview {
+			font-family: var(--tertiary-font);
+			font-size: 24px;
+			max-width: 650px;
+			margin-top: 10px;
+		}
+	}
+	
+	&__arrow {
+		display: flex;
+		justify-content: flex-end;
+		margin: 80px 0 120px;
+		img {
+			width: 45%;
+			height: auto;
+		}
+	}
+	
+	&__main_container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 120px;
+		gap: 120px;
+		h4 {
+			font-size: 24px;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+		}
+		p, a {
+			font-family: var(--tertiary-font);
+		}
+		.section_header {
+			span {
+				margin-right: 25px;
+			}
+			h1 {
+				font-size: 64px;
+				font-weight: 300;
+				font-family: var(--tertiary-font);
+				line-height: 65px;
+			}
+		}
+		.links_section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+			img {
+				width: 100%;
+			}
+			.links {
+				margin-top: 10px;
+				display: flex;
+				flex-wrap: wrap;
+				column-gap: 100px;
+				row-gap: 10px;
+				a {
+					transition: 0.5s all ease-in-out;
+					&:hover {
+						color: var(--color-orange);
+					}
+				}
+			}
+		}
+		.banner_section {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.approach_section,
+		.features_section,
+		.results_section {
+			display: flex;
+			flex-direction: column;
+			gap: 100px;
+		}
+		.features_section {
+			.features_container {
+				display: flex;
+				justify-content: space-between;
+				gap: 30px;
+				max-width: 1920px;
+				h4 {
+					margin-bottom: 0;
+				}
+				.features__items {
+					width: 45%;
+					display: flex;
+					flex-direction: column;
+					gap: 20px;
+				}
+				.item__details {
+					display: flex;
+					align-items: center;
+					padding: 23px;
+					gap: 20px;
+					cursor: pointer;
+					transition: 0.5s all ease-in-out;
+					&:hover {
+						background-color: var(--color-spurt-highlight) !important;
+					}
+					h2 {
+						font-size: 64px;
+						font-family: var(--secondary-font);
+						min-width: 65px;
+						text-align: center;
+					}
+					span {
+						font-weight: 400;
+					}
+				}
+				img {
+					width: 40%;
+					height: auto;
+				}
+			}
+		}
+		.results_section {
+			.images_container {
+				display: flex;
+				img {
+					width: 50%;
+					height: auto;
+					object-fit: cover;
+					background-color: white;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1600px) {
+	.case_study {
+		&__footer {
+			padding: 0 120px;
+		}
+	}
+}
+@media (min-width: 1920px) {
+	.case_study {
+		&__banner,
+		&__main_container {
+			padding: 100px 200px 0;
+		}
+		&__footer {
+			padding: 0 200px;
+		}
+	}
+}
+@media (max-width: 1024px) {
+	.case_study {
+		&__banner {
+			padding: 100px 100px;
+		}
+		&__main_container {
+			padding: 0 100px;
+			.links_section {
+				.links {
+					column-gap: 40px;
+				}
+			}
+			.features_section {
+				.features_container {
+					flex-direction: column;
+					.features__items {
+						width: 80%;
+					}
+					img {
+						margin: 0 auto;
+						width: auto;
+					}
+				}
+			}
+			.results_section {
+				.images_container {
+					flex-wrap: wrap;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 700px) {
+	.case_study {
+		&__banner {
+			padding: 50px 50px 0;
+			.overview {
+				font-size: 18px;
+			}
+		}
+		&__arrow {
+			img {
+				width: 70%;
+			}
+		}
+		&__main_container {
+			padding: 0 50px;
+			gap: 100px;
+			.section_header {
+				h1 {
+					font-size: 50px;
+					line-height: 51px;
+				}
+				span {
+					margin-right: 10px;
+				}
+			}
+			.features_section {
+				.features_container {
+					flex-direction: column;
+					.features__items {
+						width: 100%;
+					}
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 500px) {
+	.case_study {
+		&__banner {
+			padding: 40px 20px 0;
+		}
+		&__main_container {
+			padding: 0 20px;
+			.features_section {
+				.item__details {
+					flex-wrap: wrap;
+				}
+			}
+		}
+	}
+}
