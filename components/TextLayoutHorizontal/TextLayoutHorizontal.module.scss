@@ -1,0 +1,41 @@
+.text_layout {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    row-gap: 50px;
+    .text_section {
+        min-width: 300px;
+        max-width: 650px;
+    }
+    .section2 {
+        margin-top: 50px;
+    }
+    img {
+        width: 60%;
+        height: auto;
+        min-height: 500px;
+        object-fit: cover;
+    }
+    .highlight {
+        background-color: var(--color-green);
+    }
+}
+
+@media (max-width: 1260px) {
+	.text_layout {
+        flex-wrap: wrap;
+        img {
+            width: 100% !important;
+            height: auto;
+            min-height: auto;
+        }
+	}
+}
+@media (max-width: 500px) {
+    .text_layout {
+        .text_section {
+            width: 100%;
+            min-width: auto;
+        }
+    }
+}

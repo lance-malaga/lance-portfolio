@@ -1,0 +1,32 @@
+.text_layout {
+    .section1,
+    .section2 {
+        min-width: 300px;
+        max-width: 650px;
+    }
+    .section2 {
+        margin-top: 50px;
+        margin-left: auto;
+    }
+    .extra_paragraph {
+        margin-top: 40px;
+    }
+    img {
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+    }
+    .highlight {
+        background-color: var(--color-green);
+    }
+}
+
+@media (max-width: 500px) {
+    .text_layout {
+        .section1,
+        .section2 {
+            width: 100%;
+            min-width: auto;
+        }
+    }
+}
