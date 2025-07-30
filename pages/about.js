@@ -6,6 +6,8 @@ import { motion } from 'framer-motion'
 // components
 import CustomHead from '@/components/CustomHead'
 import Header from '@/components/Header'
+import FadeInOnView from '@/components/FadeInOnView'
+import Footer from '@/components/Footer'
 
 // assets
 import backgroundAbout from '@/public/images/background/background-about.png'
@@ -75,6 +77,9 @@ export default function About() {
                         </div>
                     </motion.div>
                 </main>
+                <FadeInOnView className={styles.footer__container}>
+                    <Footer/>
+                </FadeInOnView>
             </div>
         </div>
     )

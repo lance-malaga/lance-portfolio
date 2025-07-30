@@ -1,15 +1,17 @@
 import Image from 'next/image'
 import styles from '@/styles/Contact.module.scss'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 // components
 import CustomHead from '@/components/CustomHead'
 import Header from '@/components/Header'
+import FadeInOnView from '@/components/FadeInOnView'
+import Footer from '@/components/Footer'
 
 // assets
 import backgroundContact from '@/public/images/background/background-contact.png'
 import linkIcon from '@/public/icons/link-out-icon.svg'
-import Link from 'next/link'
 
 export default function Contact() {
     return (
@@ -25,18 +27,9 @@ export default function Contact() {
             <div className={styles.contact__main_content}>
                 <Header/>
                 <main>
-                    <motion.h1
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                    >
-                        Contact
-                    </motion.h1>
-                    <motion.div 
+                    <FadeInOnView duration={0.8}><h1>Contact</h1></FadeInOnView>
+                    <FadeInOnView duration={0.8} delay={0.5}
                         className={styles.content__container}
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
                     >
                         <div className={styles.mail__container}>
                             <h4>Mail</h4>
@@ -70,8 +63,11 @@ export default function Contact() {
                             </div>
                         </div>
 
-                    </motion.div>
+                    </FadeInOnView>
                 </main>
+                <FadeInOnView duration={0.8} delay={0.5} className={styles.footer__container}>
+                    <Footer/>
+                </FadeInOnView>
             </div>
         </div>
     )

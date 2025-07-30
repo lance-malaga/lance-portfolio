@@ -1,5 +1,4 @@
 .navigation__container {
-	padding: 60px 120px;
 	height: auto;
 	position: relative;
 
@@ -16,6 +15,7 @@
 	}
 
     main {
+        padding: 60px 120px;
         margin: 80px 0 50px;
         display: flex;
         align-items: center;
@@ -83,7 +83,7 @@
 	}
 }
 @media (min-width: 1600px) {
-    .navigation__container {
+    .navigation__container main {
 		padding: 120px 0;
 	}
 }
@@ -101,7 +101,6 @@
 }
 @media (max-width: 910px) {
 	.navigation__container {
-        padding: 50px;
         main {
             h1 {
                 font-size: 40px;
@@ -114,9 +113,9 @@
     }
 }
 @media (max-width: 700px) {
-	.navigation__container {
+    .navigation__container {
         main {
-            margin-top: 50px;
+            padding: 50px;
             .content__container {
                 margin-left: -150px;
             }
@@ -134,8 +133,8 @@
 }
 @media (max-width: 500px) {
 	.navigation__container {
-		padding: 40px 20px;
         main {
+            padding: 40px 20px;
             .content__container {
                 margin-left: 0;
             }
