@@ -17,11 +17,9 @@ export default function CaseStudyGlide({category}) {
 
     return (
         <div>
-            <motion.div 
+            <FadeInOnView
                 className={styles.project__header}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                duration={0.8}
             >
                 <div>
                     <h2>{project.title}</h2>
@@ -35,12 +33,11 @@ export default function CaseStudyGlide({category}) {
                         height={"auto"}
                     />
                 </Link>
-            </motion.div>
-            <motion.div 
+            </FadeInOnView>
+            <FadeInOnView 
                 className={styles.portait__layout}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+                duration={0.8}
+                delay={0.5}
             >
                 <Image
                     src={project.banner}
@@ -70,7 +67,7 @@ export default function CaseStudyGlide({category}) {
                         </Link>
                     }
                 </div>
-            </motion.div>
+            </FadeInOnView>
             <FadeInOnView className={styles.intro__container}>
                 <div>
                     <h4>PROBLEM</h4>
