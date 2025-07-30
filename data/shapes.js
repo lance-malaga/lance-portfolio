@@ -22,7 +22,7 @@ export const shapes = [
         id: 2,
         shape: shape02,
         sample: sample01,
-        link: '/work/graphic-design/juan',
+        link: '/work/graphic-design/harry-styles',
     },
     {
         id: 3,
@@ -56,7 +56,7 @@ export const shapes = [
         id: 19,
         shape: shape09,
         sample: sample04,
-        link: '/work/graphic-design/harry-styles',
+        link: '/work/development/west-point-hotel',
     },
     {
         id: 10,

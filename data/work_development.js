@@ -24,6 +24,7 @@ export const work_development = [
         desc: 'Welcome to West Point Hotel, a luxurious 5-star resort situated in the heart of the Caribbean. Renowned for catering to young adults, businessmen, and couples, this destination exudes class and sophistication. In crafting the website for West Point Hotel, our aim was to capture its upscale ambiance through a modernist and minimalist design approach. The sleek and refined aesthetic mirrors the high-end experience the resort offers, providing a visually compelling online representation that aligns seamlessly with its luxurious identity.',
         link: `https://www.figma.com/proto/WzznboxjDFKUenSajAT4V6/West-Point-Hotel---Prototype?type=design&node-id=426-16312&t=fSxoymWYqUELEBM4-1&scaling=min-zoom&page-id=1%3A3&starting-point-node-id=516%3A12550&mode=design`,
         gallery: [
+            '/images/work/development/work03-wph/gallery-00.jpg',
             '/images/work/development/work03-wph/gallery-01.png',
             '/images/work/development/work03-wph/gallery-02.png',
             '/images/work/development/work03-wph/gallery-03.png',
