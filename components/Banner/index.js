@@ -25,6 +25,7 @@ export default function Banner({category , project}) {
                         alt='close-icon'
                         width={"auto"}
                         height={"auto"}
+                        priority
                     />
                 </Link>
             </motion.div>

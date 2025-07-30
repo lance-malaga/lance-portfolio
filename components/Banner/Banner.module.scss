@@ -11,9 +11,11 @@
         font-size: 64px;
         font-family: var(--secondary-font);
         margin-bottom: 15px;
+        text-transform: uppercase;
     }
     p {
         font-size: 20px;
+        text-transform: uppercase;
     }
     a {
         padding: 35px;
@@ -27,6 +29,7 @@
 .banner {
     margin: 40px 0;
     width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -35,19 +38,6 @@
         div {
             max-width: none;
         }
-    }
-    .banner {
-        height: 550px;
-    }
-}
-@media (max-width: 1260px) {
-    .banner {
-        height: 300px;
-    }
-}
-@media (max-width: 1024px) {
-    .banner {
-        height: 250px;
     }
 }
 @media (max-width: 800px) {
@@ -72,13 +62,5 @@
                 width: 40px;
             }
         }
-    }
-    .banner {
-        height: 180px;
-    }
-}
-@media (max-width: 400px) {
-    .banner {
-        height: 180px;
     }
 }
