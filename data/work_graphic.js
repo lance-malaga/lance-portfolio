@@ -18,7 +18,7 @@ export const work_graphic = [
     {
         title: `HYGGE`,
         subtitle: 'BRANDING | GRAPHIC DESIGN | DIGITAL DESIGN | PRINT',
-        slug: 'hygge',
+        slug: 'hygge-graphic',
         grid_img: '/images/work/graphic/grid/work-hygge.png',
     },
     {
