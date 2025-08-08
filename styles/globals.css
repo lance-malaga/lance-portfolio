@@ -6,7 +6,7 @@
 --color-purple: #AE58C2;
 --color-black: #1D1D1D;
 --color-white: #F3F2F9;
---color-white-bg: #E7E6ED;
+--color-white-bg: #F4F1EA;
 --color-gray: #CECECE;
 --color-spurt-highlight: #F0F3E7;
 
@@ -40,6 +40,7 @@ body {
 	font-family: var(--primary-font);
 	font-size: var(--body-font-size-desktop);
 	color: var(--color-black);
+	background-color: var(--color-white-bg);
 }
 a {
 	color: inherit;
