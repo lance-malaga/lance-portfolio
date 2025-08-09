@@ -8,17 +8,14 @@ import CustomHead from "@/components/CustomHead";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FadeInOnView from "@/components/FadeInOnView";
+import GridLayout from "@/components/GridLayout";
+import WorkFilter from "@/components/WorkFilter";
 
 // data
 import { work_development } from "@/data/work_development";
 import { work_ux_ui } from "@/data/work_ux_ui";
 import { work_graphic } from "@/data/work_graphic";
 import { work_motion } from "@/data/work_motion";
-
-// assets
-import backgroundWork from '@/public/images/background/background-work.png'
-import GridLayout from "@/components/GridLayout";
-import WorkFilter from "@/components/WorkFilter";
 
 export async function getServerSideProps(context) {
 	const { params } = context;
@@ -42,13 +39,6 @@ export async function getServerSideProps(context) {
 export default function Work({slug, filteredData}) {
     return (
         <div className={styles.work__container}>
-            <Image
-				src={backgroundWork}
-				alt='background-img-work'
-				width={"auto"}
-				height={"auto"}
-				className={styles.background_img}
-			/>
             <CustomHead title={'Works'} />
             <div className={styles.work__main_content}>
                 <Header/>

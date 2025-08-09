@@ -19,7 +19,6 @@ import { work_graphic } from "@/data/work_graphic";
 import { work_motion } from '@/data/work_motion';
 
 // assets
-import backgroundCase from '@/public/images/background/background-case.png'
 import GraphicHygge from '@/components/GraphicHygge';
 import Hygge from '@/components/CaseStudyProject/Hygge';
 
@@ -62,13 +61,6 @@ export default function WorkDetails({category, projectName, project}) {
                 <Hygge/>
             : 
                 <div className={styles.work_details__container}>
-                    <Image
-                        src={backgroundCase}
-                        alt='background-img-work'
-                        width={"auto"}
-                        height={"auto"}
-                        className={styles.background_img}
-                    />
                     <CustomHead title={`Works | ${formatProjectName(project.title)}`}/>
                     {project.portrait_layout ? (
                         <div className={styles.work_details__main_container}>

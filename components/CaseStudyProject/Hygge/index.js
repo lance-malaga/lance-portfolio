@@ -15,7 +15,6 @@ import TextLayoutHorizontal from "@/components/TextLayoutHorizontal";
 // assets
 import linkArrow from '@/public/icons/link-arrow.svg'
 import arrowDown from '@/public/icons/squiggly-arrow-down.png'
-import backgroundImg from '@/public/images/background/background-case.png'
 import hyggeBanner from "@/public/images/home/project-banners/hygge-banner.jpg"
 import aboutImg from "@/public/images/work/ux-ui/hygge/about-img.jpg"
 import introBannerImg from "@/public/images/work/ux-ui/hygge/intro-banner.jpg"
@@ -48,13 +47,6 @@ export default function Hygge() {
 	return (
 		<div className={styles.case_study}>
             <div>
-                <Image
-                    src={backgroundImg}
-                    alt='background-img-work'
-                    width={"auto"}
-                    height={"auto"}
-                    className={styles.case_study__background_img}
-                />
                 <CustomHead title={`Works | Hygge Design House`}/>
             </div>
             <div className={styles.case_study__banner}>

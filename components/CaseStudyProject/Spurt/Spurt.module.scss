@@ -1,17 +1,6 @@
 .case_study {
 	position: relative;
-	
-	&__background_img {
-		z-index: -1;
-		position: absolute;
-		min-height: 100vh;
-		height: -webkit-fill-available;
-		width: 100%;
-		object-fit: cover;
-		top: 0;
-		left: 0;
-		right: 0;
-	}
+	background-color: white;
 	
 	&__banner {
 		padding: 100px 120px 0;

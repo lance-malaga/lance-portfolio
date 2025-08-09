@@ -15,7 +15,6 @@ import TextLayoutHorizontal from "@/components/TextLayoutHorizontal";
 // assets
 import linkArrow from '@/public/icons/link-arrow.svg'
 import arrowDown from '@/public/icons/squiggly-arrow-down.png'
-import backgroundImg from '@/public/images/background/background-case.png'
 import spurtBanner from "@/public/images/home/project-banners/spurt-banner.jpg"
 import aboutImg from "@/public/images/work/development/spurt/about-img.png"
 import introBannerImg from "@/public/images/work/development/spurt/intro-banner.png"
@@ -67,13 +66,6 @@ export default function Spurt() {
     return (
         <div className={styles.case_study}>
             <div>
-                <Image
-                    src={backgroundImg}
-                    alt='background-img-work'
-                    width={"auto"}
-                    height={"auto"}
-                    className={styles.case_study__background_img}
-                />
                 <CustomHead title={`Works | Spurt`}/>
             </div>
             <div className={styles.case_study__banner}>
