@@ -2,21 +2,9 @@
 	height: auto;
 	position: relative;
 
-	.background_img {
-		z-index: -1;
-		position: absolute;
-		min-height: 100vh;
-		height: -webkit-fill-available;
-		width: 100%;
-		object-fit: cover;
-		top: 0;
-		left: 0;
-		right: 0;
-	}
-
     main {
         padding: 60px 120px;
-        margin: 80px 0 50px;
+        margin: 0px 0 50px;
         .content__container {
             margin-top: 40px;
             display: flex;
@@ -90,6 +78,11 @@
 .footer__container {
 	max-width: var(--max-width-screen);
 	margin: 0 auto;
+}
+.background_img {
+	position: fixed;
+    right: 0;
+    bottom: 0;
 }
 
 @media (min-width: 1440px) {

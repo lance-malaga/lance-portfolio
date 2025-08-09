@@ -2,25 +2,12 @@
 	height: auto;
 	position: relative;
 
-	.background_img {
-		z-index: -1;
-		position: absolute;
-		min-height: 100vh;
-		height: -webkit-fill-available;
-		width: 100%;
-		object-fit: cover;
-		top: 0;
-		left: 0;
-		right: 0;
-	}
-
     main {
         padding: 60px 120px 100px;
-        margin: 80px 0 0;
         display: flex;
         align-items: center;
         .content__container {
-            margin-left: -75px;
+            margin-left: 80px;
         }
         .nav_list__container {
             display: flex;
@@ -75,6 +62,10 @@
         }
     }
 }
+.background_img {
+	position: fixed;
+    right: 0;
+}
 
 @media (min-width: 1440px) {
     .navigation__main_content {
@@ -117,7 +108,7 @@
         main {
             padding: 50px;
             .content__container {
-                margin-left: -150px;
+                margin-left: 40px;
             }
             h1 {
                 font-size: 35px;
