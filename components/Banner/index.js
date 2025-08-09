@@ -25,7 +25,6 @@ export default function Banner({category , project}) {
                         alt='close-icon'
                         width={"auto"}
                         height={"auto"}
-                        priority
                     />
                 </Link>
             </motion.div>
@@ -37,9 +36,8 @@ export default function Banner({category , project}) {
                 <Image
                     src={project.banner}
                     alt='banner-img'
-                    width={1000}
-                    height={400}
                     className={styles.banner}
+                    priority
                 />
             </motion.div>
         </>
