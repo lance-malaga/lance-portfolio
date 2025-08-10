@@ -1,24 +1,36 @@
+import spurtBanner from "@/public/images/work/development/work02-glide/glide-header.png";
+import glideaiBanner from "@/public/images/work/development/work02-glide/glide-header.png";
+import wphBanner from "@/public/images/work/development/work03-wph.png";
+import leniBanner from "@/public/images/work/development/work04-leni.png";
+import amaiaBanner from "@/public/images/work/development/work-amaia.png";
+import redSunBanner from "@/public/images/work/development/work05-redsun.png";
+import yoriBanner from "@/public/images/work/development/work08-yori.png";
+import roastBanner from "@/public/images/work/development/work07-roast.png";
+
 export const work_development = [
+    // spurt
     {
         title: 'SPURT',
         slug: 'spurt',
         subtitle: 'MOBILE DEVELOPMENT | UX/UI | GRAPHIC DESIGN | BRANDING',
         grid_img: '/images/work/development/grid/work01-spurt.svg',
-        banner: '/images/work/development/work01-spurt/spurt-header.png',
+        banner: spurtBanner,
     },
+    // glideai
     {
         title: 'GLIDE AI',
         slug: 'glide-ai',
         subtitle: 'FLUTTER APP | MOBILE DEVELOPMENT | BRANDING | UX/UI',
         grid_img: '/images/work/development/grid/work02-glide.svg',
-        banner: '/images/work/development/work02-glide/glide-header.png',
+        banner: glideaiBanner,
     },
+    // wph
     {
         title: `WEST POINT HOTEL`,
         slug: 'west-point-hotel',
         subtitle: 'WORDPRESS | UX/UI | BRANDING',
         grid_img: '/images/work/development/grid/work03-wph.svg',
-        banner: '/images/work/development/work03-wph.png',
+        banner: wphBanner,
         programs: 'WORDPRESS, ADOBE ILLUSTRATOR, FIGMA',
         button: 'VIEW PROTOTYPE',
         desc: 'Welcome to West Point Hotel, a luxurious 5-star resort situated in the heart of the Caribbean. Renowned for catering to young adults, businessmen, and couples, this destination exudes class and sophistication. In crafting the website for West Point Hotel, our aim was to capture its upscale ambiance through a modernist and minimalist design approach. The sleek and refined aesthetic mirrors the high-end experience the resort offers, providing a visually compelling online representation that aligns seamlessly with its luxurious identity.',
@@ -33,12 +45,13 @@ export const work_development = [
             // '/images/work/development/work03-wph/gallery-06.png',
         ]
     },
+    // lenipedia
     {
         title: `LENIPEDIA`,
         slug: 'lenipedia',
         subtitle: 'WORDPRESS | UX/UI',
         grid_img: '/images/work/development/grid/work04-leni.svg',
-        banner: '/images/work/development/work04-leni.png',
+        banner: leniBanner,
         programs: 'WORDPRESS, FIGMA',
         button: 'VIEW PROTOTYPE',
         desc: `Lenipedia is a website dedicated to shedding light on the profound impact of Leni Robredo during her 2022 presidential campaign in the Philippines. By highlighting her work, ideals, accomplishments, and commitment to good governance, the platform showcases how her supporters were inspired to contribute both funds and volunteer efforts to fuel her entire campaign. The primary objective of Lenipedia is to narrate these events, emphasizing how a single woman ignited a spark of hope within Filipinos. The website's aesthetic draws inspiration from the campaign's theme, incorporating a vibrant pink palette to create an engaging and visually cohesive user experience.`,
@@ -50,12 +63,32 @@ export const work_development = [
             '/images/work/development/work04-leni/gallery-04.png',
         ]
     },
+    // amaia
+    {
+        title: `AMAIA`,
+        slug: 'amaia',
+        subtitle: 'WEB DEVELOPMENT | REACTJS | CMS',
+        grid_img: '/images/work/development/grid/work-amaia.svg',
+        banner: amaiaBanner,
+        programs: 'REACTJS | ADOBE PHOTOSHOP',
+        button: 'VIEW WEBSITE',
+        desc: `Amaia is the affordable housing arm of Ayala Land, committed to making quality homes accessible to hardworking Filipinos. With over 30 sustainable communities built since 2010, Amaia continues to fulfill the dream of homeownership across the country. The website was designed with a fresh light green and white palette, creating a clean, welcoming interface that reflects Amaia’s approachable and trustworthy brand.`,
+        link: `https://www.amaialand.com/`,
+        gallery: [
+            '/images/work/development/work-amaia/gallery-01.png',
+            '/images/work/development/work-amaia/gallery-02.png',
+            '/images/work/development/work-amaia/gallery-03.png',
+            '/images/work/development/work-amaia/gallery-04.png',
+            '/images/work/development/work-amaia/gallery-05.png',
+        ]
+    },
+    // redsun
     {
         title: `RED SUN MENU`,
         slug: 'redsun',
         subtitle: 'WEB DEVELOPMENT | WEB DESIGN',
         grid_img: '/images/work/development/grid/work05-redsun.svg',
-        banner: '/images/work/development/work05-redsun.png',
+        banner: redSunBanner,
         programs: 'NEXTJS, FIGMA',
         progress: true,
         desc: 'This website, "Red Sun Menu", is an e-commerce platform showcasing a variety of authentic Japanese dishes that can be ordered for delivery. The site highlights the diverse flavors of Japanese cuisine and allows customers to choose from a selection of prepared meals.',
@@ -78,12 +111,14 @@ export const work_development = [
     //         '/images/work/development/work06-tomo/gallery-01.png',
     //     ]
     // },
+
+    // yori
     {
         title: `YORI`,
         slug: 'yori',
         subtitle: 'MOBILE DEVELOPMENT | UX/UI | GRAPHIC DESIGN',
         grid_img: '/images/work/development/grid/work08-yori.svg',
-        banner: '/images/work/development/work08-yori.png',
+        banner: yoriBanner,
         programs: 'NEXTJS, ADOBE ILLUSTRATOR, AFTER EFFECTS, FIGMA',
         desc: 'Yori is a mobile web application cook book that promotes a variety of healthy, affordable meals. Through its interactive children-friendly features, it provides a platform for families to involve their children in the cooking process. As well as an opportunity to educate and develop their cognitive abilities through learning about nutritional benefits.',
         link: `https://yori-nutritional-foods.vercel.app/`,
@@ -98,12 +133,13 @@ export const work_development = [
             '/images/work/development/work08-yori/gallery-08.png',
         ]
     },
+    // roast
     {
         title: `ROAST MASTERS`,
         slug: 'roast-masters',
         subtitle: 'WEB DEVELOPMENT | WEB DESIGN',
         grid_img: '/images/work/development/grid/work07-roast.svg',
-        banner: '/images/work/development/work07-roast.png',
+        banner: roastBanner,
         programs: 'HTML5, CSS, ADOBE PHOTOSHOP, FIGMA',
         desc: `Roast Masters, stands as a static café website. The website showcases a variety of beverages and pastries, its aesthetic emphasizes the sophistication of classic fonts complemented by a soothing palette of green tones.`,
         link: `https://roast-masters.vercel.app/index.html`,

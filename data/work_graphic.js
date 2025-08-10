@@ -1,10 +1,20 @@
+import zestBanner from "@/public/images/work/graphic/work01-zest.png"
+import underBanner from "@/public/images/work/graphic/work02-under.png"
+import menuBanner from "@/public/images/work/graphic/work03-menu.png"
+import harryBanner from "@/public/images/work/graphic/work04-harry.png"
+import cardBanner from "@/public/images/work/graphic/work05-card.png"
+import dreamBanner from "@/public/images/work/graphic/work06-dream.png"
+import juanBanner from "@/public/images/work/graphic/work07-juan.png"
+import islandBanner from "@/public/images/work/graphic/work08-island.png"
+
 export const work_graphic = [
+    // zest
     {
         title: `ZEST`,
         slug: 'zest',
         subtitle: 'PRODUCT DESIGN | GRAPHIC DESIGN | BRANDING',
         grid_img: '/images/work/graphic/grid/work01-zest.svg',
-        banner: '/images/work/graphic/work01-zest.png',
+        banner: zestBanner,
         programs: 'ADOBE ILLUSTRATOR, PHOTOSHOP',
         desc: 'Zest is an energy drink bursting with lemon, orange, and watermelon flavors. Its vibrant colors and refreshing imagery features floating fruit graphics to capture the essence of energy and positivity. Perfect for cooling off on a hot summer day, Zest promises a refreshing experience that uplifts the spirits.',
         link: ``,
@@ -15,18 +25,20 @@ export const work_graphic = [
             '/images/work/graphic/work01-zest/gallery-04.png',
         ]
     },
+    // hygge
     {
         title: `HYGGE`,
         subtitle: 'BRANDING | GRAPHIC DESIGN | DIGITAL DESIGN | PRINT',
         slug: 'hygge-graphic',
         grid_img: '/images/work/graphic/grid/work-hygge.png',
     },
+    // under
     {
         title: `UNDER`,
         slug: 'under',
         subtitle: 'MAGAZINE | GRAPHIC DESIGN | PRINT',
         grid_img: '/images/work/graphic/grid/work02-under.svg',
-        banner: '/images/work/graphic/work02-under.png',
+        banner: underBanner,
         programs: 'ADOBE ILLUSTRATOR, INDESIGN',
         desc: `Under is a magazine project showcasing Europe's first underwater restaurant designed by Snøhetta. The magazine adopts an elegant and minimalist approach, emphasizing captivating imagery to evoke a sense of calm and serenity akin to the ocean's depths and the cool colors of the Under building.`,
         link: `https://indd.adobe.com/view/7d64f496-bca4-4542-8ca9-f473b3eb2093`,
@@ -36,12 +48,13 @@ export const work_graphic = [
         ],
         portrait_layout: true,
     },
+    // happy days
     {
         title: `HAPPY DAYS`,
         slug: 'happy-days',
         subtitle: 'MENU | GRAPHIC DESIGN',
         grid_img: '/images/work/graphic/grid/work03-menu.png',
-        banner: '/images/work/graphic/work03-menu.png',
+        banner: menuBanner,
         programs: 'ADOBE ILLUSTRATOR, INDESIGN',
         desc: `This project showcases a playful and inviting menu design for "Happy Days", crafted using Adobe Illustrator and InDesign. The layout combines a nostalgic diner-inspired aesthetic with modern typography and a vibrant green color palette, ensuring an engaging and easy-to-navigate experience for diners.`,
         link: ``,
@@ -50,12 +63,13 @@ export const work_graphic = [
         ],
         portrait_layout: true,
     },
+    // harry styles
     {
         title: `HARRY STYLES`,
         slug: 'harry-styles',
         subtitle: 'POSTER | ILLUSTRATION | GRAPHIC DESIGN',
         grid_img: '/images/work/graphic/grid/work04-harry.svg',
-        banner: '/images/work/graphic/work04-harry.png',
+        banner: harryBanner,
         programs: 'ADOBE ILLUSTRATOR, PHOTOSHOP',
         desc: `This illustrative poster draws inspiration from the vibrant energy and unique style of the iconic Harry Styles. Mirroring his radiant persona and dynamic stage presence, the poster represents a sense of joy and colorful glee through its lively illustrations. Each element is carefully crafted to evoke the infectious happiness that defines Harry Styles' concerts, creating a visual representation of the artist's distinctive vibe. The fusion of energetic visuals aims to convey the essence of his music and stage charisma, making this poster a celebration of the one and only Harry Styles.`,
         link: ``,
@@ -65,33 +79,36 @@ export const work_graphic = [
         ],
         portrait_layout: true,
     },
+    // lm
     {
         title: `LM.`,
         slug: 'name-card',
         subtitle: 'BRANDING | GRAPHIC DESIGN | PRINT',
         grid_img: '/images/work/graphic/grid/work05-card.svg',
-        banner: '/images/work/graphic/work05-card.png',
+        banner: cardBanner,
         programs: 'ADOBE PHOTOSHOP, FIGMA',
         desc: 'Crafted in Illustrator and Photoshop, this business card design features a bold, minimalist layout that highlights my initials in striking black with a gradient accent. The clean typography and modern color scheme reinforce a professional yet creative identity, making a memorable impression.',
         link: ``,
     },
+    // dream
     {
         title: `DREAM`,
         slug: 'dream',
         subtitle: 'MAGAZINE | GRAPHIC DESIGN',
         grid_img: '/images/work/graphic/grid/work06-dream.svg',
-        banner: '/images/work/graphic/work06-dream.png',
+        banner: dreamBanner,
         programs: 'ADOBE PHOTOSHOP',
         desc: `The Dream project was centered around creating a fashion magazine cover. The design concept aimed to capture the essence of the model's environment by incorporating dream-like illustrations and images. Through this approach, the cover sought to transport viewers into a surreal world, blending reality with elements of fantasy. The goal was to evoke a sense of enchantment and intrigue, inviting readers to explore the unique and imaginative narrative woven into the visual storytelling of the magazine cover.`,
         link: ``,
         portrait_layout: true,
     },
+    // juan
     {
         title: `JUAN`,
         slug: 'juan',
         subtitle: 'INTERACTIVE GAME | GRAPHIC DESIGN | ILLUSTRATION',
         grid_img: '/images/work/graphic/grid/work07-juan.svg',
-        banner: '/images/work/graphic/work07-juan.png',
+        banner: juanBanner,
         programs: 'ADOBE ILLUSTRATOR, FIGMA',
         desc: 'Embark on a heartwarming journey with Juan, a curious island boy, as he explores the enchanting destinations of Palawan, Philippines. Engage in a delightful trivia game at each stop, testing your knowledge and guiding Juan through the wonders of this tropical paradise.',
         link: `https://www.figma.com/proto/loJdVNJ84ASyT6uoo11hhy/Juan's-Palawan-Adventure?type=design&node-id=178-74969&t=xmmL0TX1STBRDZ0v-1&scaling=contain&page-id=74%3A2&mode=design`,
@@ -102,12 +119,13 @@ export const work_graphic = [
             '/images/work/graphic/work07-juan/gallery-04.png',
         ]
     },
+    // floating island
     {
         title: `FLOATING ISLAND`,
         slug: 'floating-island',
         subtitle: 'ILLUSTRATION | GRAPHIC DESIGN',
         grid_img: '/images/work/graphic/grid/work08-island.svg',
-        banner: '/images/work/graphic/work08-island.png',
+        banner: islandBanner,
         programs: 'ADOBE ILLUSTRATOR',
         desc: 'The Floating Island project features a vibrant design palette composed of soft pastel colors. It offers a playful twist on the traditional structure of elements like clouds, trees, and rocks. The overall aesthetic aims to evoke a sense of whimsy and fun, utilizing a combination of not-so-bright hues to create a visually engaging representation of this imaginative floating landscape.',
         link: ``,
