@@ -60,7 +60,7 @@ export default function Home() {
 							</div>
 							<div className={styles.intro__btm_section}>
 								<div className={styles.intro__left_content}>
-									<p className={styles.description}>I’m a <span>graphic designer, ux/ui designer</span> & <span>front-end developer</span></p>
+									<p className={styles.description}>I’m a <span>graphic designer, ux/ui designer</span> & <span>front-end developer</span>.</p>
 									<div className={styles.buttons__container}>
 										<Link href={"#case-studies-section"}>
 											<Image
