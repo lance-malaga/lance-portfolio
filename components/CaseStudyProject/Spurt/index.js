@@ -26,9 +26,9 @@ import branding1 from "@/public/images/work/development/spurt/branding-1.png"
 import branding2 from "@/public/images/work/development/spurt/branding-2.png"
 import branding3 from "@/public/images/work/development/spurt/branding-3.png"
 // feature imgs
-import feature01 from '@/public/images/work/development/work01-spurt/feature-your-garden.svg'
-import feature02 from '@/public/images/work/development/work01-spurt/feature-plantaid.svg'
-import feature03 from '@/public/images/work/development/work01-spurt/feature-community.svg'
+import feature01 from '@/public/images/work/development/spurt/feature-your-garden.svg'
+import feature02 from '@/public/images/work/development/spurt/feature-plantaid.svg'
+import feature03 from '@/public/images/work/development/spurt/feature-community.svg'
 // result imgs
 import chueyGIF from "@/public/images/work/development/spurt/chuey-animated.gif"
 import splashGIF from "@/public/images/work/development/spurt/spurt-splash.gif"
