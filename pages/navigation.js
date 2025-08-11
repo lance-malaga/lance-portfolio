@@ -14,7 +14,7 @@ import linkIcon from '@/public/icons/link-out-icon.svg'
 export default function Navigation() {
     const navList = [
         {name: 'Home', link: '/'},
-        {name: 'Work', link: '/work/development'},
+        {name: 'Work', link: '/work/graphic-design'},
         {name: 'About', link: '/about'},
         {name: 'Contact', link: '/contact'},
     ];
