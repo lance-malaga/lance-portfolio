@@ -1,21 +1,16 @@
 import Link from "next/link"
 import Image from "next/image"
-import styles from "./GridLayout.module.scss"
+import styles from "./GridAutoLayout.module.scss"
 
-export default function GridLayout({slug, filteredData}) {
+export default function GridAutoLayout({filteredData}) {
     return (
-        <div className={styles.grid__layout}>
-            {filteredData.map((data, index) => (
-                <div 
-                    className={ index == 0 ? `${styles.work__content} ${styles.long}` : `${styles.work__content}`}
-                    key={index}
-                >
-                    <Link href={`/work/${slug}/${data.slug}`}>
+        <div className={styles.grid__container}>
+             {filteredData.map((data, index) => (
+                <div className={styles.grid__item} key={index}>
+                    <Link href={data.link} target="_blank" rel="noopener noreferrer">
                         <Image
                             src={data.grid_img}
-                            alt={data.slug + '-img'}
-                            width={index == 0 ? 785 : 370}
-                            height={400}
+                            alt={data.title + 'img'}
                         />
                         <div className={styles.overlay}>
                             <div>
