@@ -189,11 +189,6 @@
 	}
 }
 
-.footer__container {
-	max-width: var(--max-width-screen);
-	margin: 0 auto;
-}
-
 .intro__container,
 .case_study__container {
 	margin: 0 120px;
@@ -223,6 +218,12 @@
 	.case_study__container {
 		margin: 0 120px;
 		width: auto;
+	}
+}
+@media (min-width: 1601px) {
+    .footer__container {
+		max-width: var(--max-width-screen);
+		margin: 0 auto;
 	}
 }
 @media (max-width: 1260px) {

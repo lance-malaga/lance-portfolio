@@ -58,15 +58,11 @@
 	.grid__container {
         grid-gap: 30px;
 		.grid__item {
-            height: auto;
             .overlay {
                 h4 {
                     font-size: 30px;
                 }
             }
-        }
-        .grid__item:first-child {
-            height: auto;
         }
 	}
 }

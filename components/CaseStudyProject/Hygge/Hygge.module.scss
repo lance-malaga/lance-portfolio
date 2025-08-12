@@ -124,6 +124,13 @@
 		}
 	}
 }
+@media (max-width: 1600px) {
+	.case_study {
+		&__footer {
+			padding: 0;
+		}
+	}
+}
 @media (min-width: 1920px) {
 	.case_study {
 		&__banner,

@@ -3,13 +3,14 @@
 	position: relative;
 
     main {
-        padding: 60px 120px;
-        margin: 0px 0 50px;
+        margin: 60px 120px 50px;
         .content__container {
             margin-top: 40px;
             display: flex;
-            justify-content: space-between;
             gap: 100px;
+            div {
+                flex: 1;
+            }
         }
         h1 {
             font-family: var(--secondary-font);
@@ -75,10 +76,6 @@
         }
     }
 }
-.footer__container {
-	max-width: var(--max-width-screen);
-	margin: 0 auto;
-}
 .background_img {
 	position: fixed;
     right: 0;
@@ -87,20 +84,24 @@
 
 @media (min-width: 1440px) {
     .contact__container main {
-        padding: 60px 120px;
-		margin: 0 auto;
+		margin: 120px auto;
 		max-width: var(--max-width-screen);
 	}
 }
-@media (min-width: 1600px) {
+@media (max-width: 1600px) {
     .contact__container main {
-		padding: 120px 0;
+        margin: 120px 120px;
+	}
+}
+@media (min-width: 1601px) {
+    .footer__container {
+		max-width: var(--max-width-screen);
+		margin: 0 auto;
 	}
 }
 @media (max-width: 1250px) {
     .contact__container {
         main {
-            margin: 80px 0 150px;
             .content__container {
                 gap: 50px;
             }
@@ -119,7 +120,8 @@
 @media (max-width: 700px) {
 	.contact__container {
         main {
-            padding: 50px;
+            margin: 0 50px;
+            padding: 0;
             h1 {
                 font-size: 50px;
             }
@@ -129,8 +131,7 @@
 @media (max-width: 500px) {
 	.contact__container {
         main {
-            padding: 40px 20px;
-			margin-top: 50px;
+			margin: 0 20px;
             h1 {
                 font-size: 30px;
             }

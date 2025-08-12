@@ -18,10 +18,6 @@
 .work_details__main_container{
 	padding: 100px 120px;
 }
-.footer__container {
-	max-width: var(--max-width-screen);
-	margin: 0 auto;
-}
 
 @media (min-width: 1440px) {
     .work_details__main_container {
@@ -32,6 +28,12 @@
 @media (min-width: 1600px) {
     .work_details__main_container {
 		padding: 120px 0;
+	}
+}
+@media (min-width: 1601px) {
+    .footer__container {
+		max-width: var(--max-width-screen);
+		margin: 0 auto;
 	}
 }
 @media (max-width: 1024px) {

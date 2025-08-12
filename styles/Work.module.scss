@@ -25,10 +25,6 @@
         font-family: var(--secondary-font);
     }
 }
-.footer__container {
-	max-width: var(--max-width-screen);
-	margin: 0 auto;
-}
 
 @media (min-width: 1440px) {
 	.main__container {
@@ -46,6 +42,12 @@
 	}
 	.filter__section {
 		margin: 0 120px 70px;
+	}
+}
+@media (min-width: 1601px) {
+    .footer__container {
+		max-width: var(--max-width-screen);
+		margin: 0 auto;
 	}
 }
 @media (max-width: 700px) {

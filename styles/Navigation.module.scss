@@ -68,14 +68,16 @@
 }
 
 @media (min-width: 1440px) {
-    .navigation__main_content {
-		margin: 0 auto;
-		max-width: var(--max-width-screen);
+    .navigation__container main {
+        margin: 0 auto;
+        max-width: var(--max-width-screen);
+        padding: 60px 0 100px;
 	}
 }
-@media (min-width: 1600px) {
+@media (max-width: 1600px) {
     .navigation__container main {
-		padding: 120px 0;
+		padding: 60px 0 100px;
+        margin: 0 120px;
 	}
 }
 @media (max-width: 1200px) {
