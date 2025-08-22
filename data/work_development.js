@@ -123,14 +123,8 @@ export const work_development = [
         desc: 'Yori is a mobile web application cook book that promotes a variety of healthy, affordable meals. Through its interactive children-friendly features, it provides a platform for families to involve their children in the cooking process. As well as an opportunity to educate and develop their cognitive abilities through learning about nutritional benefits.',
         link: `https://yori-nutritional-foods.vercel.app/`,
         gallery: [
-            '/images/work/development/work08-yori/gallery-01.png',
-            '/images/work/development/work08-yori/gallery-02.png',
-            '/images/work/development/work08-yori/gallery-03.png',
-            '/images/work/development/work08-yori/gallery-04.png',
-            '/images/work/development/work08-yori/gallery-05.png',
-            '/images/work/development/work08-yori/gallery-06.png',
-            '/images/work/development/work08-yori/gallery-07.png',
-            '/images/work/development/work08-yori/gallery-08.png',
+            '/images/work/development/work08-yori/yori-grp-1.png',
+            '/images/work/development/work08-yori/yori-grp-2.png',
         ]
     },
     // roast
