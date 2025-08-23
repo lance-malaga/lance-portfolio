@@ -1,5 +1,3 @@
-import spurtBanner from "@/public/images/work/development/work02-glide/glide-header.png";
-import glideaiBanner from "@/public/images/work/development/work02-glide/glide-header.png";
 import wphBanner from "@/public/images/work/development/work03-wph.png";
 import leniBanner from "@/public/images/work/development/work04-leni.png";
 import amaiaBanner from "@/public/images/work/development/work-amaia.png";
@@ -14,15 +12,13 @@ export const work_development = [
         slug: 'spurt',
         subtitle: 'MOBILE DEVELOPMENT | UX/UI | GRAPHIC DESIGN | BRANDING',
         grid_img: '/images/work/development/grid/work01-spurt.svg',
-        banner: spurtBanner,
     },
     // glideai
     {
         title: 'GLIDE AI',
         slug: 'glide-ai',
-        subtitle: 'FLUTTER APP | MOBILE DEVELOPMENT | BRANDING | UX/UI',
+        subtitle: 'FLUTTER APP | MAPBOX | BRANDING | UX/UI',
         grid_img: '/images/work/development/grid/work02-glide.svg',
-        banner: glideaiBanner,
     },
     // wph
     {

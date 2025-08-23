@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./TextLayoutHorizontal.module.scss";
+import linkIcon from '@/public/icons/link-out-icon.svg'
 
 export default function TextLayoutHorizontal({
 	title1,
@@ -9,6 +11,8 @@ export default function TextLayoutHorizontal({
 	parag2,
 	backgroundColor,
 	imageWidth,
+	link,
+	linkText,
 }) {
 	const renderParagraph = (content) => {
 		if (Array.isArray(content)) {
@@ -45,6 +49,13 @@ export default function TextLayoutHorizontal({
 						{title2 && <h4>{title2}</h4>}
 						<p>{renderParagraph(parag2)}</p>
 					</div>
+				)}
+
+				{ link && (
+					<Link href={link} target='_blank' className={styles.link__out}>
+						<Image src={linkIcon} alt={'link-out-icon'}/>
+						<p>{linkText}</p>
+					</Link>
 				)}
 			</div>
 		</div>

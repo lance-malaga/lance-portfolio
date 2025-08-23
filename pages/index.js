@@ -24,6 +24,7 @@ import redBgBlur from '@/public/images/background/red-bg-group.png'
 import yellowBgBlur from '@/public/images/background/yellow-bg-group.png'
 import spurtBanner from "@/public/images/home/project-banners/spurt-banner.jpg"
 import hyggeBanner from "@/public/images/home/project-banners/hygge-banner.jpg"
+import glideBanner from "@/public/images/home/project-banners/glide-banner.jpg"
 import squigglyLine from '@/public/icons/squiggly-line.svg'
 
 // data
@@ -138,6 +139,14 @@ export default function Home() {
 										number={"02"}
 										title={"Spurt"}
 										tags={["mobile development", "ux/ui", "graphic design", "branding"]}
+									/>
+								</Link>
+								<Link href={'work/development/glide-ai'}>
+									<CaseStudyItem
+										image={glideBanner}
+										number={"03"}
+										title={"Glide Ai"}
+										tags={["ux/ui", "branding", "flutter", "mapbox"]}
 									/>
 								</Link>
 							</div>

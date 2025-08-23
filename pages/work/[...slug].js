@@ -7,10 +7,12 @@ import ProjectLayout from '@/components/ProjectLayout';
 import Banner from '@/components/Banner';
 import ProjectPortraitLayout from '@/components/ProjectPortraitLayout';
 import TopButton from '@/components/TopButton';
-import CaseStudyGlide from '@/components/CaseStudyGlide';
 import Spurt from '@/components/CaseStudyProject/Spurt';
 import FadeInOnView from '@/components/FadeInOnView';
 import Footer from '@/components/Footer';
+import GraphicHygge from '@/components/GraphicHygge';
+import Hygge from '@/components/CaseStudyProject/Hygge';
+import Glide from '@/components/CaseStudyProject/Glide';
 
 // data
 import { work_development } from "@/data/work_development";
@@ -18,9 +20,6 @@ import { work_ux_ui } from "@/data/work_ux_ui";
 import { work_graphic } from "@/data/work_graphic";
 import { work_motion } from '@/data/work_motion';
 
-// assets
-import GraphicHygge from '@/components/GraphicHygge';
-import Hygge from '@/components/CaseStudyProject/Hygge';
 
 export async function getServerSideProps(context) {
 	const { params } = context;
@@ -59,17 +58,14 @@ export default function WorkDetails({category, projectName, project}) {
                 <Spurt/>
             : projectName == "hygge" ?
                 <Hygge/>
+            : projectName == "glide-ai" ?
+                <Glide/>
             : 
                 <div className={styles.work_details__container}>
                     <CustomHead title={`Works | ${formatProjectName(project.title)}`}/>
                     {project.portrait_layout ? (
                         <div className={styles.work_details__main_container}>
                             <ProjectPortraitLayout category={category} project={project} />
-                            <TopButton/>
-                        </div>
-                    ) : project.slug == 'glide-ai' ? (
-                        <div className={styles.work_details__main_container}>
-                            <CaseStudyGlide category={category}/>
                             <TopButton/>
                         </div>
                     ) : project.slug == 'hygge-graphic' ? (
