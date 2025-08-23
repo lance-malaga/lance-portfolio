@@ -46,7 +46,7 @@ export default function About() {
                             <p>
                                 Hello, I'm Lance—a versatile professional with a proven track record in crafting impactful websites, mobile applications, and designs. My journey through Graphic Design, UI/UX Design, Frontend Development and Architecture has equipped me with a diverse skill set. I'm always eager to learn new things, and this passion for continuous growth fuels my ability to approach challenges from unique perspectives, fostering creativity and innovation in both development and design. I thrive on delivering solutions that not only meet but exceed the expectations of my clients.
                             </p>
-                            <div className={styles.resume_container}>
+                            {/* <div className={styles.resume_container}>
                                 <Link href={'/Resume - Malaga, Lance [Developer].pdf'} target='_blank'>
                                     <button>
                                         <Image
@@ -69,7 +69,7 @@ export default function About() {
                                         <span>designer resume</span>
                                     </button>
                                 </Link>
-                            </div>
+                            </div> */}
                         </motion.div>
                     </main>
                     <FadeInOnView className={styles.footer__container}>
