@@ -41,7 +41,7 @@ export const shapes = [
         id: 6,
         shape: shape06,
         sample: sample03,
-        link: '/work/graphic-design/hygge',
+        link: '/work/graphic-design/hygge-graphic',
     },
     {
         id: 7,

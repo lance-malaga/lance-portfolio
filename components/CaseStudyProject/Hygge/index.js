@@ -70,6 +70,8 @@ export default function Hygge() {
                         ]}
                         title2={'Role'}
                         parag2={'I collaborated with the team to enhance Hygge’s visual identity across digital and physical touch points. My work focused on improving user experience, establishing stronger brand consistency, and transforming the website into a warmer, more elevated reflection of the in-store experience.'}
+                        link={`https://hyggedesignhouse.ca/`}
+                        linkText={`Visit Hygge Design House`}
                     />
                 </FadeInOnView>
                 <FadeInOnView className={styles.links_section}>

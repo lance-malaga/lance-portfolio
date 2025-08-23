@@ -89,6 +89,8 @@ export default function Spurt() {
                         ]}
                         title2={'Role'}
                         parag2={'My role in this project involved designing the user experience, interface design, branding, and collaborating on mobile development.'}
+                        link={`https://www.figma.com/proto/gpqY4VUMLCw8YpqCz8WLhs/Spurt-Prototype?kind=proto&node-id=764-5915&page-id=0%3A1&scaling=scale-down&starting-point-node-id=764%3A5850&t=CFXWaXb3BRdYaSkh-1&type=design&viewport=-670%2C24%2C0.38`}
+                        linkText={'Visit Spurt Prototype'}
                     />
                 </FadeInOnView>
                 <FadeInOnView className={styles.links_section}>
