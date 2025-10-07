@@ -6,6 +6,7 @@ import spacesGrid from "@/public/images/work/motion/work01-spaces.svg"
 import carGrid from "@/public/images/work/motion/work02-car.svg"
 import jeepGrid from "@/public/images/work/motion/work03-tour.svg"
 import tierSaleGrid from "@/public/images/work/motion/work-tier-sale.jpg"
+import shoppingBagGrid from "@/public/images/work/motion/work-shopping-bag.jpg"
 import newArrivalsGrid from "@/public/images/work/motion/work-new-arrivals.jpg"
 import floralEmojiGrid from "@/public/images/work/motion/work-floral-emoji.jpg"
 
@@ -20,6 +21,13 @@ export const work_motion = [
         programs: 'ADOBE ILLUSTRATOR, AFTER EFFECTS',
         desc: 'The trend of living in apartments, condos, and dorms has been currently rising all around the world, particularly in urban areas. Small homes offer a range of benefits, from lower costs and reduced maintenance to a more minimalist and eco-friendly approach to living. However, it also requires careful planning and organization to make the most of limited space and ensure that your living environment is comfortable and functional. This motion graphic will be focusing on the elements of interior design which can help home owners improve the function of each space within a compact home.',
         link: `https://drive.google.com/file/d/1o96ZEBGmxcOJ2UposKTttQYTCZEIQmuE/view?usp=sharing`,
+    },
+    // shopping bag
+    {
+        title: `SHOPPING BAG`,
+        subtitle: 'MOTION GRAPHICS | GRAPHIC DESIGN | SOCIAL MEDIA',
+        grid_img: shoppingBagGrid,
+        link: `https://www.instagram.com/reel/DPSaGbpknMI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==`,
     },
     // tier sale
     {
