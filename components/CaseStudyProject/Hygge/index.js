@@ -69,7 +69,7 @@ export default function Hygge() {
                             "—from mugs and candles to floral arrangements and textiles. The brand emphasizes comfort, simplicity, and intentional living while supporting Canadian makers and artisans."
                         ]}
                         title2={'Role'}
-                        parag2={'I collaborated with the team to enhance Hygge’s visual identity across digital and physical touch points. My work focused on improving user experience, establishing stronger brand consistency, and transforming the website into a warmer, more elevated reflection of the in-store experience.'}
+                        parag2={'As the UX/UI designer, my role was to improve the user experience, refine the brand identity, and transform the website into a warmer, more elevated reflection of the in-store experience.'}
                         link={`https://hyggedesignhouse.ca/`}
                         linkText={`Visit Hygge Design House`}
                     />
