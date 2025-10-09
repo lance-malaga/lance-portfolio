@@ -13,6 +13,7 @@ import Footer from '@/components/Footer';
 import GraphicHygge from '@/components/GraphicHygge';
 import Hygge from '@/components/CaseStudyProject/Hygge';
 import Glide from '@/components/CaseStudyProject/Glide';
+import WestPointHotel from '@/components/CaseStudyProject/WPH';
 
 // data
 import { work_development } from "@/data/work_development";
@@ -60,6 +61,8 @@ export default function WorkDetails({category, projectName, project}) {
                 <Hygge/>
             : projectName == "glide-ai" ?
                 <Glide/>
+            : projectName == "west-point-hotel" ?
+                <WestPointHotel/>
             : 
                 <div className={styles.work_details__container}>
                     <CustomHead title={`Works | ${formatProjectName(project.title)}`}/>
