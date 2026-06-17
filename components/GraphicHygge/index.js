@@ -10,6 +10,7 @@ import linkIcon from '@/public/icons/link-out-icon.svg'
 import mockup1 from '@/public/images/work/graphic/work-hygge/branding.png'
 import mockup2 from '@/public/images/work/graphic/work-hygge/flyer.png'
 import mockup3 from '@/public/images/work/graphic/work-hygge/newsletters.png'
+import mockup4 from '@/public/images/work/graphic/work-hygge/tent-card.png'
 import FadeInOnView from '../FadeInOnView'
 
 export default function GraphicHygge({category}) {
@@ -75,6 +76,15 @@ export default function GraphicHygge({category}) {
                 <Image
                     src={mockup1}
                     alt={'branding-image'}
+                    width={"auto"}
+                    height={"auto"}
+                />
+            </FadeInOnView>
+			<FadeInOnView className={styles.other__container}>
+                <h4>TABLE TENT</h4>
+                <Image
+                    src={mockup4}
+                    alt={'table-tent-image'}
                     width={"auto"}
                     height={"auto"}
                 />
